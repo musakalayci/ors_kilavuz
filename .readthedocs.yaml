@@ -7,11 +7,15 @@ version: 2
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
-  configuration: kılavuz/source/conf.py
+  configuration: source/conf.py
   builder: html
 
 # Optionally build your docs in additional formats such as PDF
 formats:
   - pdf
-# Optionally set the version of Python and requirements required to build your docs
 
+# Optionally set the version of Python and requirements required to build your docs
+python:
+  version: "3.7"
+  install:
+    - requirements: requirements.txt
