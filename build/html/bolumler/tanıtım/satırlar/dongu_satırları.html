@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Döngü Satırları &#8212; Örs Kılavuz</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="Dizin" href="../../../genindex.html" />
+    <link rel="search" title="Ara" href="../../../search.html" />
+    <link rel="next" title="Koşullu Satırlar" href="kosullu_sat%C4%B1rlar.html" />
+    <link rel="prev" title="Satırlar" href="../sat%C4%B1rlar.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="tr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Örs Kılavuz</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  İçerik:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../giris.html">
+   İçindekiler
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../giris.html">
+     Giriş
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/onsoz.html">
+       Hedefler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/tan%C4%B1t%C4%B1m.html">
+       Tanıtım
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/kurulum.html">
+       Kurulum
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/derleme.html">
+       Derleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../h%C4%B1zl%C4%B1_tan%C4%B1t%C4%B1m.html">
+     Tanıtım
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yorumlar.html">
+       Yorumlar
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../degerler.html">
+       Değerler
+      </a>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="../sat%C4%B1rlar.html">
+       Satırlar
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Döngü Satırları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="kosullu_sat%C4%B1rlar.html">
+         Koşullu Satırlar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="y%C3%B6nlendirmeler.html">
+         Yönlendirmeler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="durum.html">
+         Durum ve Seçimler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../ifadeler.html">
+       İfadeler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/bo%C5%9F.html">
+         Boş
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/say%C4%B1.html">
+         Sayılar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/diziler.html">
+         Diziler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/metin.html">
+         Metinler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/temel_i%C5%9Flemler.html">
+         Temel İşlemler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../diziler.html">
+       Diziler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../haf%C4%B1za.html">
+       Hafıza
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../islemler.html">
+       İşlemler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../konumlar.html">
+       Konumlar
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../turler.html">
+       Türler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/yap%C4%B1taslar%C4%B1.html">
+         Yapıtaşları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/sayac.html">
+         Sayaç
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/tur.html">
+         Türler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/kal%C4%B1p.html">
+         Kalıplar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/yal%C4%B1n.html">
+         Yalın tür tanımları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/ortak.html">
+         Ortak
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../birimler.html">
+       Birimler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yine_yeniden_islemler.html">
+       Yine Yeniden İşlemler
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../ornek.html">
+   Örnek
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/musakalayci/ors"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/bolumler/tanıtım/satırlar/dongu_satırları.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Döngü Satırları</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="dongu-satirlari">
+<h1>Döngü Satırları<a class="headerlink" href="#dongu-satirlari" title="Bu başlık için kalıcı bağlantı">#</a></h1>
+<p>Bilgisayar belleğinin aslında devasa bir dizi olduğu düşünülünce, bu dizinin ‘a’
+noktasından ‘b’ noktasına gitmeyi istemek kadar temel bir istek olamaz. Tam olarak
+bu amacı yerine getirmek için Örs dili çeşitli döngü yöntemleri kullanmaktadır.</p>
+<p>Döngülerin amacı verili kod dizisini koşul sağlanmayana kadar tekrar tekrar
+işletmektir. Bu yönüyle motorlara benzerler. En basitinden siz arabayı çalıştırdınız ve
+arabanın motoru dönmeye başlar ve öyle devam eder ta ki siz motoru kapayıncaya kadar ya da
+yakıt bitinceye kadar. Yani siz koşulu sağlamayana kadar o motor çalışmaya devam eder.</p>
+<p>Burada dikkat edilmesi gereken husus Örs dilinin C dilinden daha fazla yönlendirmeler
+tanımlaması ve döngüler üzerinde daha fazla denetim sağlamasıdır. Yönlendirmeler konusuna
+ayrı bir başlık açacağız.</p>
+<dl class="glossary">
+<dt id="term-Her-Dongusu">Her Döngüsü:<a class="headerlink" href="#term-Her-Dongusu" title="Permalink to this term">#</a></dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">ArgumanlarÖrneği</span>
+   <span class="n">argumanSayisi</span>   <span class="n">tam</span><span class="p">,</span>
+   <span class="n">_argumanlar</span>   <span class="o">**</span><span class="n">t8</span><span class="p">:</span> <span class="n">tam</span>
+<span class="p">{</span>
+   <span class="o">//</span> <span class="n">ilk</span> <span class="n">döngü</span>
+   <span class="o">//</span><span class="n">argümanları</span> <span class="n">dizi</span> <span class="n">erişimiyle</span> <span class="n">yazdır</span><span class="o">.</span>
+   <span class="n">her</span> <span class="n">değer</span> <span class="n">i</span> <span class="n">tam</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">argumanSayisi</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">:</span>
+      <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span><span class="s2">&quot;-&gt; </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_argumanlar</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+
+   <span class="o">//</span><span class="n">ikinci</span> <span class="n">döngü</span><span class="p">:</span>
+   <span class="o">//</span><span class="n">argümanları</span> <span class="n">konumlarından</span> <span class="n">yazdır</span><span class="o">.</span>
+   <span class="n">her</span> <span class="n">değer</span> <span class="n">t</span> <span class="o">**</span><span class="n">t8</span> <span class="o">=</span> <span class="n">_argumanlar</span><span class="p">;</span> <span class="o">*</span><span class="n">t</span><span class="p">;</span> <span class="n">t</span><span class="o">++</span><span class="p">:</span>
+      <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span><span class="s2">&quot;=&gt; </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">t</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Yukarıdaki örneğin ilk 4 satırını göz ardı edecek olursak, bu işlem basitçe,
+önce yazılım argümanlarını dizi erişimi ile daha sonra konum erişimiyle yazdırıyor.</p>
+<p>‘Her’ sözcüğü ile başlayan satır içerisindeki ilk satırda değer ya da değerler tanımlanır.
+Sonrasındaki satırda koşul belirtilir, üçüncü satırda ise tanımlı değerler güncellenir ve her
+döngüsünün beden satırına geçilir.</p>
+<p>Bu kısmı tabî ki de sadece bir söz dizimi. Hepimizin C dilinden eline yapışmış alışkanlık.
+Bu satırların anlam sıralaması farklı olsaydı yani ilkin güncelleyip, sonra koşulu değerlendiremezmiydik ?
+Tabi ki de değerlendirebiliriz ama mesele o değil. Örs dili makina diline dönüştüğünde, biz tasarımcılar olarak
+istiyoruz ki derleyicinin ürettiği kod C derleyicisinin ürettiği kod ile bire bir eşdeğer olsun.
+Yani her döngüsünü yukarıdaki gibi tanımladığınızda, üretilen makina kodu ile C derleyicisinin ürettiği
+makina kodu tıpa tıp aynı.</p>
+<p>Diğer taraftan tam burada basit bir okuma sorunu ortaya çıkıyor. Özellikle internet, oyun,
+arayüz uygulamalarında çoğu zaman döngüyü koşullarla değil sayaçlarla yönlendiriyoruz ve 4 satırlık her döngüsü
+okurken göze batıyor. Bir diğer konu ise yukarıdaki söz dizimi makina dili üretirken de 5 satır kod üretiyor.</p>
+<blockquote>
+<div><p>C tarzı  döngü:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">her</span> <span class="p">;</span> <span class="p">;</span> <span class="n">güncellemeYapacakİşlem</span><span class="p">():</span>
+<span class="p">{</span>
+   <span class="n">işletilecekBeden</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="o">/*</span>
+   <span class="n">Burası</span> <span class="n">ise</span> <span class="n">devam</span> <span class="n">satırı</span><span class="o">.</span>
+<span class="o">*/</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Şimdi bu döngü satırına basitçe bir ameliyat yapalım. Değer tanımlanması gereken kısımda değer tanımlanmamış. Yani boş satır var.
+Koşul satırı yine boş. Güncelleme satırında bir işlem çağırılmış ve bu üretilecek ilk makina dili satırı.
+Beden kısmında da dolu satır var ve bu da bizim ikinci makina dili satırımız.</p>
+<p>Ama, fakat, lakin o yorumun olduğu yerde bir diğer satır daha var. Devam satırı.
+Makina kodunda devam ederken nereye devam edeceğini söylemen gerekiyor. Örs, C, C++ dillerinde devam satırını
+siz tabi ki de yazmıyorsunuz ama makina dilinde o satır var ve yukarıdaki döngünün makina dilinde, yani özünde,
+3 satırı var.</p>
+<p>Peki ama biz işlemci değiliz ki bize ne bundan ? Çok doğru ama biz bu kodu okuyacak olanız.
+5 satır tanımlayıp, 3 satır ürettirmenin anlamı yok. Yani argümanlar örneğindeki gibi 4
+satırlık döngü tanımladığınızda aslında makina 5 satır kod görecek.
+Bu örnekte ise tanım ve koşul kısmı boş satır ve derleyici hiçbir makina kodu üretmeyecek.</p>
+<p>Peki öyleyse fazladan iki satırı tanımlamanın ne anlamı var ? Burada basit bir görsel soyutlama yapmamız ve her döngüsünün
+söz dizimini kıvraklaştırmamız gerekiyor.</p>
+</dd>
+<dt id="term-Her-dongusu-soz-dizimi-cesitleri">Her döngüsü söz dizimi çeşitleri:<a class="headerlink" href="#term-Her-dongusu-soz-dizimi-cesitleri" title="Permalink to this term">#</a></dt><dd><dl class="glossary">
+<dt id="term-Sonsuz-dongu">Sonsuz döngü:<a class="headerlink" href="#term-Sonsuz-dongu" title="Permalink to this term">#</a></dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">her</span><span class="p">:</span>
+   <span class="n">herhangiİşlem</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Yukarıdaki örnekte görsel uygulamalarda, veri arz uygulamalarında bolca kullanılan bir sonsuz döngü örneği var.
+Sadece beden satırında bir takım işlemler çağırılmış.
+Derleyici 1 satır görecek ve 2 makina satırı üretecek.</p>
+<p>Göze sade görünüyor. Derleyiciye sade görünüyor ve makina zaten sade görecek.</p>
+</dd>
+<dt id="term-Tanimsiz-dongu">Tanımsız döngü:<a class="headerlink" href="#term-Tanimsiz-dongu" title="Permalink to this term">#</a></dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">her</span> <span class="n">devamMı</span><span class="p">();</span> <span class="n">güncellemeYap</span><span class="p">():</span>
+   <span class="n">bedenKısmı</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Fark ettiyseniz değer tanımlaması beklenen satır yok. Zaten iş yaparken çoğu zaman değerler önceki
+satırlarda tanımlanmış olacak.
+‘her’ satırı içinde 2 satır tanımlı. Sırasıyla ilk kısım koşul satırı ve bu kısmın koşul olması bir kaide.
+İkinci satırda güncelleme kısmı var, sonrasında ise beden satırı ve gizli son satır. Derleyici
+Üç satır görecek ve dört satır üretecek.</p>
+<p>Göze sade görünüyor. Derleyiciye sade görünüyor ve makina zaten sade görecek.</p>
+<dl class="simple">
+<dt>not:</dt><dd><p>şunu da eklemek isterim, ilk satırda değer tanımlanması sadece bekleniyor. İllaki değer tanımlayacaksınız
+diye bir kaide yok.</p>
+</dd>
+</dl>
+</dd>
+<dt id="term-Kosullu-dongu">Koşullu döngü:<a class="headerlink" href="#term-Kosullu-dongu" title="Permalink to this term">#</a></dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">i</span> <span class="n">tam</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">her</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="p">{</span>
+   <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span><span class="s2">&quot;-&gt; </span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+   <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+   <span class="o">/*</span><span class="n">i</span><span class="s1">&#39;yi güncellemek tamamen isteğe bağlı.*/</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Yazılıma başladığınızda ilk göreceğiniz döngü örneği. Görüldüğü üzere ‘her’ sözcüğünden sonra
+koşul var ve bu Örs derleyicisi için şu anlama geliyor: ‘i’ değeri ondan küçükken döngü bedeni çalıştırılacak ve
+güncelleme döngü bedeni içerisinde halledilecek ya da halledilmeyecek.</p>
+<p>C dilindeki ‘while’ döngüsü ile bire bir aynı kod Örs derleyicisi tarafından üretilecek.</p>
+</dd>
+</dl>
+</dd>
+<dt id="term-Tum-dongusu">Tüm döngüsü:<a class="headerlink" href="#term-Tum-dongusu" title="Permalink to this term">#</a></dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">i</span> <span class="n">tam</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">tüm</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="p">{</span>
+   <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span><span class="s2">&quot;-&gt; </span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+   <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+   <span class="o">/*</span><span class="n">i</span><span class="s1">&#39;yi güncellemek tamamen isteğe bağlı.*/</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>ark ettiğiniz üzere yukarıdaki koşullu her döngüsü ile bire bir aynı. Ama ‘tüm’
+öngü satırının çeşidi yok. C dilindeki ‘while’ döngüsüne karşılık gelen sade bir döngü satırı.</p>
+<p>üm döngüsü için 2 satır istenecek ve sonuç olarak 3 satır makina kodu üretilecek.</p>
+</dd>
+<dt id="term-Sonuc">Sonuç:<a class="headerlink" href="#term-Sonuc" title="Permalink to this term">#</a></dt><dd><p>‘her’ sözcüğünü döngü satırı tanımlarken seçmemizin amacı türkçede akla yatkın olması.
+Türkçenin benzersiz matematiksel doğası var.</p>
+<p>Mesela aşağıdaki satırı Türkçeye çevirmeye çalışalım:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">her</span> <span class="n">değer</span> <span class="n">i</span> <span class="n">tam</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">:</span>
+<span class="p">{</span>
+   <span class="n">birşeyler</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>‘i’ değerini 10’a eşitleyip; her bir ‘i’ ondan küçük iken; ‘i’ değerini azaltarak ‘birşeyler’ işlemini çalıştır.</p>
+<p>Eğer burada söz dizimine odaklanmazsanız ilginç bir ayrıntıyı yakalayabilirsiniz. Türkçede
+diğer pek çok dilin aksine söz dizimi kuralı yok ve bu durum Türkçeye kıvraklık, ifade yeteneği
+ve güç katıyor. Yukarıdaki döngü satırını bu denli insan diline bire bir çevireceğiniz ve iyelik ekine kadar makinaya
+anlatabileceğiniz nadir dillerden bir tanesi Türkçe.</p>
+<p>O yüzden ‘her’ sözcüğünü döngü satırlarını tanımlarken seçtim. Peki her sözcüğünü seçmeseydin ?
+Tabi ki de özünde hiç bir önemi yok. İsteserseniz kendi tasarladığınız dilde 124323 sayısını döngü satırları
+tanımlamak için bile kullanabilirsiniz.</p>
+<p>Basitçe tekrar söylemem gerekirse: “Okuduğumuz kodun, derleyicinin okuduğu kodun ve üretilen kodun olabildiğince örtüşmesini sağlamak.”</p>
+<p>Peki buradaki döngü satırlarının makina kodu üretimi konuları diğer yazılım dillerinde öyle değil mi ?</p>
+<p>Bazen öyle, bazen değil ve özellikle üretilen kodun iyileştirilme aşamasında boş ya da gereksiz satırlar silinecek.</p>
+<p>Burada bu tanımı yapmaktaki amaç
+gözümüzün gördüğü kod ile Örs’ün ürettiği kodun olabildiğince örtüşmesi ve
+bunun bir kaide olarak belirtilmesi. Yani diyelim ki Örs onuncu sürümünü yayınladı,
+bu kaideler değişmeyecek ve bizler nasıl kod üretiyor diye endişelenmeyeceğiz.</p>
+<p>Altı çizilmesi gereken diğer konu ise üretilen kodun mümkün olduğunca C dili ile uyumlu olması. Konu döngüler olunca
+bu istek önemsiz durabilir; en nihayetinde işlem çağrıları dışında
+üretilen kodun diğer kütüphanelerle iletişimi pek olmuyor
+ama tepeden tırnağa C dili ile uyum sağlamak Örs’ün tasarım amaçlarından bir tanesi.
+Tasarımın merkezi kaidelerinden biri bu ve işletim sistemi kütüphaneleri ile rahat rahat iletişim kurabilmek için bu
+kaideyi tepeden tırnağa bozmayacağız.</p>
+</dd>
+</dl>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../sat%C4%B1rlar.html" title="önceki sayfa">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">önceki</p>
+            <p class="prev-next-title">Satırlar</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="kosullu_sat%C4%B1rlar.html" title="sonraki sayfa">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">sonraki</p>
+        <p class="prev-next-title">Koşullu Satırlar</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By musakalayci<br/>
+  
+      &copy; Copyright 2022, musakalayci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Sayılar &#8212; Örs Kılavuz</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="Dizin" href="../../../genindex.html" />
+    <link rel="search" title="Ara" href="../../../search.html" />
+    <link rel="next" title="Diziler" href="diziler.html" />
+    <link rel="prev" title="Boş" href="bo%C5%9F.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="tr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Örs Kılavuz</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  İçerik:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../giris.html">
+   İçindekiler
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../giris.html">
+     Giriş
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/onsoz.html">
+       Hedefler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/tan%C4%B1t%C4%B1m.html">
+       Tanıtım
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/kurulum.html">
+       Kurulum
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/derleme.html">
+       Derleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../h%C4%B1zl%C4%B1_tan%C4%B1t%C4%B1m.html">
+     Tanıtım
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yorumlar.html">
+       Yorumlar
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../degerler.html">
+       Değerler
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../sat%C4%B1rlar.html">
+       Satırlar
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/dongu_sat%C4%B1rlar%C4%B1.html">
+         Döngü Satırları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/kosullu_sat%C4%B1rlar.html">
+         Koşullu Satırlar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/y%C3%B6nlendirmeler.html">
+         Yönlendirmeler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/durum.html">
+         Durum ve Seçimler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="../ifadeler.html">
+       İfadeler
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="bo%C5%9F.html">
+         Boş
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Sayılar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="diziler.html">
+         Diziler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="metin.html">
+         Metinler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="temel_i%C5%9Flemler.html">
+         Temel İşlemler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../diziler.html">
+       Diziler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../haf%C4%B1za.html">
+       Hafıza
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../islemler.html">
+       İşlemler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../konumlar.html">
+       Konumlar
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../turler.html">
+       Türler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/yap%C4%B1taslar%C4%B1.html">
+         Yapıtaşları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/sayac.html">
+         Sayaç
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/tur.html">
+         Türler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/kal%C4%B1p.html">
+         Kalıplar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/yal%C4%B1n.html">
+         Yalın tür tanımları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/ortak.html">
+         Ortak
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../birimler.html">
+       Birimler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yine_yeniden_islemler.html">
+       Yine Yeniden İşlemler
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../ornek.html">
+   Örnek
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/musakalayci/ors"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/bolumler/tanıtım/ifadeler/sayı.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Sayılar</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="sayilar">
+<h1>Sayılar<a class="headerlink" href="#sayilar" title="Bu başlık için kalıcı bağlantı">#</a></h1>
+<p>Bilgisayar dünyasındaki tüm veri türleri
+en sade haliyle ifade edilmiş sabit değerlerdir.
+Sabitlerdir ve bir değere atanıncaya kadar yaşadıkları konumları yoktur.</p>
+<p>Şimdi biraz hayal edin. 16 bit genişliğinde veri türü tanımladığınızda aslında yaptığınız şey;
+2^16 farklı birim tanımlamaktır. Çünkü sayılar deyince ortalama bir insanın aklına hesap gelebilir
+ama bizim için en önemli anlamı bu sayıların etiket gibi kullanılabilecek olmasıdır. Mesela ilk okul
+numaram 115’di. 115 numarası okul ortamında bana atıfta bulunuyordu. Işte bu yönüyle katı tanımlı sayı
+türlerinin varlığı sayısal tasarımda anlam kazanıyor. Veritabanlarından, işletim sistemlerine,
+devlet dairelerindeki belgelerden, okullara kadar her yerde var olan basit bir anlam. O da basitçe
+özlerinde birer atıflar olmalarıdır. Yani tanımladığımız benzersiz sayılar
+benzersiz nesne ya da öznelere atıfta bulunurlar.</p>
+<p>Örs’de tanımlı tüm sayı yapıtaşları C, C++ dilleri ile llvm aracılığı ile tam uyumludur.
+Zira öyle olmak da zorundadır. Çünkü yazılım dilleri uzayın derinliklerinde yalıtılmış
+ortamlarda yaşamıyor. Aksine milyonlarca farklı birimle iletişim halindeler ve bu iletişimi
+kayıpsız yapabilmenin en basit yolu, tüm dillerde kullanılabilecek sade, bitlerle tanımlabilecek,
+türlerden geçmektedir. Zaten “dijital tasarım” denilen kavramın özü de tam olarak burasıdır.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*pascal haliyle:*/
+atmışDörtBitlikTamSayı := 55_st64;
+uzunSayılar            := 10_000_000_st32;  /*fark ettiyseniz alt tirelerin yerinin bir önemi yok*/
+okulNo                 := 2004_43_280_st32; /*mesela*/
+yaşım                  := 29;               /*t32 varsayılır*/
+oran32                 := 44.00_o32;
+oran                   := 12.88             /*o64 varsayılır ve ondalık kısım nokta ile ayrılır*/;
+
+/*açık haliyle*/
+değer uzun d64   = 11_000_000;
+değer uzun64 d64 = 22_999_000_sd64; /*Aynı şey mi ? Evet. Peki ya sıradaki:*/
+değer u64 d64    = 22_990_1_st32; /*u64 değeri 64 bitlik doğal sayı olarak tanımlanıp atanan sabit değer çevrilir.*/
+</pre></div>
+</div>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="bo%C5%9F.html" title="önceki sayfa">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">önceki</p>
+            <p class="prev-next-title">Boş</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="diziler.html" title="sonraki sayfa">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">sonraki</p>
+        <p class="prev-next-title">Diziler</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By musakalayci<br/>
+  
+      &copy; Copyright 2022, musakalayci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

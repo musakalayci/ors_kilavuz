@@ -1,0 +1,1266 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Temel İşlemler &#8212; Örs Kılavuz</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="Dizin" href="../../../genindex.html" />
+    <link rel="search" title="Ara" href="../../../search.html" />
+    <link rel="next" title="Diziler" href="../diziler.html" />
+    <link rel="prev" title="Metinler" href="metin.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="tr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Örs Kılavuz</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  İçerik:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../giris.html">
+   İçindekiler
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../giris.html">
+     Giriş
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/onsoz.html">
+       Hedefler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/tan%C4%B1t%C4%B1m.html">
+       Tanıtım
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/kurulum.html">
+       Kurulum
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/derleme.html">
+       Derleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../h%C4%B1zl%C4%B1_tan%C4%B1t%C4%B1m.html">
+     Tanıtım
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../l%C3%BCgat.html">
+       Lügât
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yorumlar.html">
+       Yorumlar
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../degerler.html">
+       Değerler
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../sat%C4%B1rlar.html">
+       Satırlar
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/dongu_sat%C4%B1rlar%C4%B1.html">
+         Döngü Satırları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/kosullu_sat%C4%B1rlar.html">
+         Koşullu Satırlar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/y%C3%B6nlendirmeler.html">
+         Yönlendirmeler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/durum.html">
+         Durum ve Seçimler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="../ifadeler.html">
+       İfadeler
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="bo%C5%9F.html">
+         Boş
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="say%C4%B1.html">
+         Sayılar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="diziler.html">
+         Diziler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="metin.html">
+         Metinler
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Temel İşlemler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../diziler.html">
+       Diziler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../haf%C4%B1za.html">
+       Hafıza
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../islemler.html">
+       İşlemler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../konumlar.html">
+       Konumlar
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../turler.html">
+       Türler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/yap%C4%B1taslar%C4%B1.html">
+         Yapıtaşları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/sayac.html">
+         Sayaç
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/tur.html">
+         Türler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/kal%C4%B1p.html">
+         Kalıplar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/yal%C4%B1n.html">
+         Yalın tür tanımları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../turler/ortak.html">
+         Ortak
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../birimler.html">
+       Birimler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yine_yeniden_islemler.html">
+       Yine Yeniden İşlemler
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../ornek.html">
+   Örnek
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/musakalayci/ors"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/bolumler/tanıtım/ifadeler/temel_işlemler.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ikiz-islemler">
+   İkiz işlemler:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tekil-islemler">
+   Tekil İşlemler:
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Temel İşlemler</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ikiz-islemler">
+   İkiz işlemler:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tekil-islemler">
+   Tekil İşlemler:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="temel-islemler">
+<h1>Temel İşlemler<a class="headerlink" href="#temel-islemler" title="Bu başlık için kalıcı bağlantı">#</a></h1>
+<p>Yazılım dünyasında işlevi yönünden özüne indirgenmiş, görevi önceden tasarlanmış
+ifadelere denir.</p>
+<p>Bu indirgemedeki hedef temel işlemin en az makina dili ile
+işlemci için ifade edilmesi,
+eğer indirgenemiyorsa mümkün olduğunca durağanlaştırılması;
+yani derleme sürecinde o işlemlerin sonuçlandırılmasıdır. Özüne
+indirgenmiş deyimiyle kastedilen budur.</p>
+<p>Bazı ifadeler ise yazılımlarda tekrar eder. Mesela çok fazla geçirme
+işlemi yapan algoritmalarda bu geçirme işlemi görevleri önceden
+tasarlandığı haliyle temel işlem olarak kullanılabilir. Görevi
+önceden tasarlanmış deyimiyle ise kastedilen budur.</p>
+<p>Canlı temel işlemler; işlemci tarafından çalıştırılabilirken;
+durağan temel işlemler üretim sürecinde sonuçlandırılır. İlki işlemciyi
+hedef alırken; durağan temel işlemler derleyici hedef alır.</p>
+<p>Canlı temel işlemlerin
+makina dilinde birebir karşılığı bazen olabilir. Matematik, Mantık,
+Konum, Erişim sınıfındaki işlemlerin genelde işlemci komutu karşılığı vardır.
+Diğer sınıfta canlı işlemler malesef aynı görevi üstlenmiş işlemci komutu almayabilir.
+Mesela <strong>‘+=’</strong> önce değer ile yapıtaşını toplayacak sonra ise sağdaki değere geçirecek.
+Bu temel işlemin işlemci komutlarında karşılığı olsaydı zaten yazılım dillerine gerek olmazdı.</p>
+<div class="admonition warning">
+<p class="admonition-title">Uyarı</p>
+<p>Tekrar belirtelim; yapısal dillerdeki temel işlemlerin
+hepimizin bildiği matematikteki temel işlemlerle alakası bile yoktur.</p>
+<p>Hatta matematikten ödünç alınmış işlemlerin bile bize lise ve
+üniversitede öğretilen işlemlerle alakası yoktur. Bize
+sürekli matematik öğretilmiş iken
+bilgisayar dünyasındaki matematik işlemleri sıralı
+matematiğin alanına (ingilizcesi:discrete mathematics) girer.</p>
+</div>
+<p>Örs dili C ailesinin temel işlemlerini değiştirmemesine
+rağmen kendi içinde yeni temel işlemler de ekler.</p>
+<p>C++ dilinin aksine Örs temel işlemleri yeniden tanımlatmaya izin vermez.
+Nedeni ise yazılım dünyasında bu konuda bir anlaşmanın olmaması
+ve herkesin fevri simgelerle bir takım işlemleri kolaylaştırma
+çabasının kodu okunamaz hale getirmesidir.</p>
+<p>C dil ailesinde tüm temel işlemler sola doğru döndüğü için Örs’de bu kaideye uyar.</p>
+<p>Temel işlemler çeşitli özelliklerine göre sınıflandırılabilir.
+Aşağıda söz dizimine göre sınıflandırarak bu işlemleri tanıtacağız.</p>
+<section id="ikiz-islemler">
+<h2>İkiz işlemler:<a class="headerlink" href="#ikiz-islemler" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p><strong>‘(ifade) işlem (ifade)’</strong>
+söz dizisiyle sağ ve sol ifadeler bekleyen işlemlerdir:</p>
+<p><strong>Aritmetik:</strong></p>
+<ul class="simple">
+<li><p><strong>‘+’</strong>, <strong>‘-’</strong> simgeleri sağ ve sollarındaki sayısal ifadeleri sırasıyla toplar ve çıkarır.</p></li>
+<li><p><strong>‘*’</strong>, <strong>‘/’</strong> simgeleri sağ ve sollarındaki sayısal ifadeleri sırasıyla çarpar ve böler.</p></li>
+<li><p><strong>‘%’</strong> simgesi solundaki sayı türündeki değer sağındaki sayı türündeki değere bölününce kalan değerini verir.</p></li>
+</ul>
+<p><strong>Bit:</strong></p>
+<ul class="simple">
+<li><p><strong>‘&amp;’</strong></p></li>
+<li><p><strong>‘|’</strong></p></li>
+<li><p><strong>‘^’</strong></p></li>
+<li><p><strong>‘~’</strong></p></li>
+<li><p><strong>‘&lt;&lt;’</strong></p></li>
+<li><p><strong>‘&gt;&gt;’</strong></p></li>
+</ul>
+<p><strong>Mantıksal:</strong></p>
+<ul class="simple">
+<li><p><strong>‘&amp;&amp;’</strong>, <strong>‘ve’</strong> simgeleri sağ ve sollarındaki sayısal değerleri mantıktaki ‘ve’ işlemi ile karşılaştırır.</p></li>
+<li><p><strong>‘||’</strong>, <strong>‘veya’</strong> simgeleri sağ ve sollarındaki sayısal değerleri mantıktaki ‘veya’ işlemi ile karşılaştırır.</p></li>
+</ul>
+<p><strong>Karşılaştırma:</strong></p>
+<ul class="simple">
+<li><p><strong>‘&lt;’</strong>: sayı türündeki değerleri niceliklerine göre karşılaştırır ve sağı küçükse 1 döner.</p></li>
+<li><p><strong>‘&gt;’</strong>: sayı türündeki değerleri niceliklerine göre karşılaştırır ve sağı büyükse 1 döner.</p></li>
+<li><p><strong>‘&lt;=’</strong>: sayı türündeki değerleri niceliklerine göre karşılaştırır ve sağı küçükse 1 döner.</p></li>
+<li><p><strong>‘&gt;=’</strong>: sayı türündeki değerleri niceliklerine göre karşılaştırır ve sağı büyükse 1 döner.</p></li>
+<li><p><strong>‘==’</strong>: sayı türündeki değerler eşit ise 1 döner.</p></li>
+<li><p><strong>“!=”</strong>: sayı türündeki değerler eşit değil ise 1 döner.</p></li>
+</ul>
+<p><strong>Atama:</strong></p>
+<ul class="simple">
+<li><p><strong>‘+=’</strong>:  sağındaki değeri solundakiyle toplar ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘-=’</strong>:  sağındaki değeri solundakiyle çıkarır ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘*=’</strong>:  sağındaki değeri solundakiyle çarpar ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘/=’</strong>: sağındaki değeri solundakiyle böler ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘%=’</strong>:  sağındaki değeri solundakiyle kalma işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘&lt;&lt;=’</strong>: sağındaki değeri solundakiyle sola kaydırma işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘&gt;&gt;=’</strong>: sağındaki değeri solundakiyle sağa kaydırma işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘||=’</strong>: sağındaki değeri solundakiyle ‘veya’ işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘&amp;&amp;=’</strong>: sağındaki değeri solundakiyle ‘ve’ işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘~=’</strong>:  sağındaki değeri solundakiyle ‘bit tersleme’ işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘&amp;=’</strong>:  sağındaki değeri solundakiyle ‘bit ve’ işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘|=’</strong>:  sağındaki değeri solundakiyle ‘bit veya’ işlemini uygular ve soldaki değere geçirir.</p></li>
+<li><p><strong>‘^=’</strong>:  sağındaki değeri solundakiyle ‘ters bit veya’ işlemini uygular ve soldaki değere geçirir.</p></li>
+</ul>
+<p><strong>Hafıza:</strong></p>
+<ul class="simple">
+<li><p><strong>‘&lt;-’</strong>: Sağındaki konumun değerini dönüp; solundaki değere geçirir.</p></li>
+<li><p><strong>‘&lt;=&gt;’</strong>: Sağ ve soldaki konumların değerlerini değiştirir.</p></li>
+</ul>
+<p><strong>Arama:</strong></p>
+<ul class="simple">
+<li><p><strong>‘::’</strong>: Birimde tanımlı nesneleri arar ve bulursa döner.
+Bulamazsa hata verip derlemeyi sonlandırır.</p></li>
+</ul>
+<p><strong>Erişim:</strong></p>
+<ul class="simple">
+<li><p><strong>‘-&gt;’</strong>: Soldaki türün konumuna erişir ve sağındaki aranan ifadeyi tür üyesi olarak bulabilirse döner.</p></li>
+<li><p><strong>‘.’</strong>:  Soldaki türün değerine erişir ve sağındaki aranan ifadeyi tür üyesi olarak bulabilirse döner</p></li>
+</ul>
+</section>
+<section id="tekil-islemler">
+<h2>Tekil İşlemler:<a class="headerlink" href="#tekil-islemler" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p><strong>Adım:</strong></p>
+<ul class="simple">
+<li><p><strong>‘(ifade)++’</strong>: solundaki sayısal ya da konum ifadesinin değerini,
+ifadeyi değerlendirdikten sonra, bir birim arttırır.</p></li>
+<li><p><strong>‘++(saf ifade)’</strong>: sağındaki sayısal ya da konum saf ifadesinin değerini, ifadeyi
+değerlendirmeden önce, bir birim arttırır.</p></li>
+<li><p><strong>‘(ifade)--’</strong>: solundaki sayısal ya da konum ifadesinin değerini,
+ifadeyi değerlendirdikten sonra, bir birim azaltır.</p></li>
+<li><p><strong>‘--(saf ifade)’</strong>: sağındaki sayısal ya da konum saf ifadesinin değerini, ifadeyi
+değerlendirmeden önce, bir birim azaltır.</p></li>
+</ul>
+<p><strong>Konum:</strong></p>
+<ul class="simple">
+<li><p><strong>‘*(konum ifadesi)’</strong>: Solunda verili konumun değerini döner.</p></li>
+<li><p><strong>‘&amp;(değer ifadesi)’</strong>:  Solunda verili değerin konumunu döner.</p></li>
+<li><p><strong>‘(konum ifadesi)[x]</strong>: Solunda verili konumun x’inci sıradaki değerini döner.</p></li>
+</ul>
+<p><strong>Tür nicelik:</strong></p>
+<ul class="simple">
+<li><p><strong>‘&#64;(ifade)’</strong>: Solunda verili ifadenin bayt boyutunu döner.</p></li>
+<li><p><strong>‘$(ifade)’</strong>: Solundaki verili ifadenin bayt sıralamasını döner.</p></li>
+</ul>
+<p><strong>Tür:</strong></p>
+<ul class="simple">
+<li><p><strong>‘%(ifade)’</strong>: Sağındaki ifadenin türünü döner. Üretim sürecinde anlamlı olsa da Örs durağan bir dil olduğu için;
+canlı anlamı yoktur.</p></li>
+</ul>
+<dl>
+<dt>Tanımlı yapıtaşları:</dt><dd><table class="colwidths-given table">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 10%" />
+<col style="width: 4%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Temel İşlemler</strong></p></th>
+<th class="head"><p>İsim</p></th>
+<th class="head"><p>Tür</p></th>
+<th class="head"><p>Makina Satırı Sayısı</p></th>
+<th class="head"><p>Görev</p></th>
+<th class="head"><p>İşleme durumu</p></th>
+<th class="head"><p>Okuma Yeri</p></th>
+<th class="head"><p>Eş Anlamlısı</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Aritmetik</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>+</strong></p></td>
+<td><p>artı</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>aritmetik</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>-</strong></p></td>
+<td><p>eksi</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>aritmetik</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>*</p></td>
+<td><p>çarpı</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>aritmetik</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>/</strong></p></td>
+<td><p>bölme</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>aritmetik</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>%</strong></p></td>
+<td><p>kalma</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>aritmetik</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>Bit</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&amp;</strong></p></td>
+<td><p>bit ve</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>bit</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>|</strong></p></td>
+<td><p>bit veya</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>bit</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>^</strong></p></td>
+<td><p>bit ters veya</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>bit</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>~</strong></p></td>
+<td><p>bit tersleme</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>bit</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&lt;&lt;</strong></p></td>
+<td><p>sola kaydırma</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>bit</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&gt;&gt;</strong></p></td>
+<td><p>sağa kaydırma</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>bit</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Mantık</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&amp;&amp;</strong></p></td>
+<td><p>ve</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>mantık</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td><p>ve</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>||</strong></p></td>
+<td><p>veya</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>mantık</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td><p>veya, ya_da</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>!</strong></p></td>
+<td><p>değil</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>mantık</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Karşılaştırma</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&lt;</strong></p></td>
+<td><p>küçüktür</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>karşılaştırma</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&gt;</strong></p></td>
+<td><p>büyüktür</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>karşılaştırma</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&lt;=</strong></p></td>
+<td><p>küçük eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>karşılaştırma</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&gt;=</strong></p></td>
+<td><p>büyük eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>karşılaştırma</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>==</strong></p></td>
+<td><p>eşitlik</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>karşılaştırma</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>!=</strong></p></td>
+<td><p>eşit değildir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>1</p></td>
+<td><p>karşılaştırma</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>Adım</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>(..)++</strong></p></td>
+<td><p>arka artış</p></td>
+<td><p>yapıtaşı, konum</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>adım</p></td>
+<td><p>canlı</p></td>
+<td><p>son</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>++(..)</strong></p></td>
+<td><p>ön artış</p></td>
+<td><p>yapıtaşı, konum</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>adım</p></td>
+<td><p>canlı</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>(..)--</strong></p></td>
+<td><p>arka azalış</p></td>
+<td><p>yapıtaşı, konum</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>adım</p></td>
+<td><p>canlı</p></td>
+<td><p>son</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>--(..)</strong></p></td>
+<td><p>ön azalış</p></td>
+<td><p>yapıtaşı, konum</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>adım</p></td>
+<td><p>canlı</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Konum</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>*</p></td>
+<td><p>derecelendirme</p></td>
+<td><p>konum</p></td>
+<td><p>1</p></td>
+<td><p>konum</p></td>
+<td><p>canlı</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&amp;</strong></p></td>
+<td><p>konumlandırma</p></td>
+<td><p>konum</p></td>
+<td><p>1</p></td>
+<td><p>konum</p></td>
+<td><p>canlı</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>[]</strong></p></td>
+<td><p>dizi erişim</p></td>
+<td><p>konum</p></td>
+<td><p>1</p></td>
+<td><p>dizi, konum</p></td>
+<td><p>canlı</p></td>
+<td><p>son</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Nicelik</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&#64;</strong></p></td>
+<td><p>boyut</p></td>
+<td><p>tüm türler</p></td>
+<td><p>0</p></td>
+<td><p>nicelik</p></td>
+<td><p>durağan</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>$</strong></p></td>
+<td><p>sıralama</p></td>
+<td><p>tüm türler</p></td>
+<td><p>0</p></td>
+<td><p>nicelik</p></td>
+<td><p>durağan</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>Atama</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>=</strong></p></td>
+<td><p>eşittir</p></td>
+<td><p>tüm türler</p></td>
+<td><p>satır &gt; 1</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>+=</strong></p></td>
+<td><p>artı eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>-=</strong></p></td>
+<td><p>eksi eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>*=</strong></p></td>
+<td><p>çarp eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/=</strong></p></td>
+<td><p>böl eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>%=</strong></p></td>
+<td><p>kal eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&lt;&lt;=</strong></p></td>
+<td><p>sola kay eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&gt;&gt;=</strong></p></td>
+<td><p>sağa kay eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>||=</strong></p></td>
+<td><p>veyala eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&amp;&amp;=</strong></p></td>
+<td><p>vele eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>~=</strong></p></td>
+<td><p>bit tersle eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&amp;=</strong></p></td>
+<td><p>bit vele eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>|=</strong></p></td>
+<td><p>bit yadala eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>^=</strong></p></td>
+<td><p>bit ters yadala eşittir</p></td>
+<td><p>yapıtaşı</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>atama</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Tür Erişim</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>-&gt;</strong></p></td>
+<td><p>tür alt konuma erişim</p></td>
+<td><p>türler</p></td>
+<td><p>2</p></td>
+<td><p>tür erişim</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>.</strong></p></td>
+<td><p>türü indirgeme</p></td>
+<td><p>türler</p></td>
+<td><p>1</p></td>
+<td><p>tür erişim</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>Hafıza</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&lt;-</strong></p></td>
+<td><p>geçirme</p></td>
+<td><p>~</p></td>
+<td><p>satır &gt;= 2</p></td>
+<td><p>hafıza</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>&lt;=&gt;</strong></p></td>
+<td><p>içerik değiştirme</p></td>
+<td><p>~</p></td>
+<td></td>
+<td><p>hafıza</p></td>
+<td><p>canlı</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Arama</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>::</strong></p></td>
+<td><p>arama</p></td>
+<td><p>birimler</p></td>
+<td><p>0</p></td>
+<td><p>arama</p></td>
+<td><p>durağan</p></td>
+<td><p>orta</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Tür İfadesi</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>%</strong></p></td>
+<td><p>tür alma</p></td>
+<td><p>tüm türler</p></td>
+<td><p>0</p></td>
+<td><p>tür ifadesi</p></td>
+<td><p>durağan</p></td>
+<td><p>ön</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="metin.html" title="önceki sayfa">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">önceki</p>
+            <p class="prev-next-title">Metinler</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../diziler.html" title="sonraki sayfa">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">sonraki</p>
+        <p class="prev-next-title">Diziler</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By musakalayci<br/>
+  
+      &copy; Copyright 2022, musakalayci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

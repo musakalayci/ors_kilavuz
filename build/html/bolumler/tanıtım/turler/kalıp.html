@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Kalıplar &#8212; Örs Kılavuz</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="Dizin" href="../../../genindex.html" />
+    <link rel="search" title="Ara" href="../../../search.html" />
+    <link rel="next" title="Yalın tür tanımları" href="yal%C4%B1n.html" />
+    <link rel="prev" title="Türler" href="tur.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="tr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Örs Kılavuz</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  İçerik:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../giris.html">
+   İçindekiler
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../giris.html">
+     Giriş
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/onsoz.html">
+       Hedefler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/tan%C4%B1t%C4%B1m.html">
+       Tanıtım
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/kurulum.html">
+       Kurulum
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../giris/derleme.html">
+       Derleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../h%C4%B1zl%C4%B1_tan%C4%B1t%C4%B1m.html">
+     Tanıtım
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yorumlar.html">
+       Yorumlar
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../degerler.html">
+       Değerler
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../sat%C4%B1rlar.html">
+       Satırlar
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/dongu_sat%C4%B1rlar%C4%B1.html">
+         Döngü Satırları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/kosullu_sat%C4%B1rlar.html">
+         Koşullu Satırlar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/y%C3%B6nlendirmeler.html">
+         Yönlendirmeler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../sat%C4%B1rlar/durum.html">
+         Durum ve Seçimler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../ifadeler.html">
+       İfadeler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/bo%C5%9F.html">
+         Boş
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/say%C4%B1.html">
+         Sayılar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/diziler.html">
+         Diziler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/metin.html">
+         Metinler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../ifadeler/temel_i%C5%9Flemler.html">
+         Temel İşlemler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../diziler.html">
+       Diziler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../haf%C4%B1za.html">
+       Hafıza
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../islemler.html">
+       İşlemler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../konumlar.html">
+       Konumlar
+      </a>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="../turler.html">
+       Türler
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="yap%C4%B1taslar%C4%B1.html">
+         Yapıtaşları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sayac.html">
+         Sayaç
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="tur.html">
+         Türler
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Kalıplar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="yal%C4%B1n.html">
+         Yalın tür tanımları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ortak.html">
+         Ortak
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../birimler.html">
+       Birimler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../yine_yeniden_islemler.html">
+       Yine Yeniden İşlemler
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../ornek.html">
+   Örnek
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/musakalayci/ors"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/bolumler/tanıtım/turler/kalıp.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kalip-islemler">
+   Kalıp işlemler:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#taclar-ve-donatimlar">
+   Taçlar ve Donatımlar:
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Kalıplar</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kalip-islemler">
+   Kalıp işlemler:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#taclar-ve-donatimlar">
+   Taçlar ve Donatımlar:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="kaliplar">
+<h1>Kalıplar<a class="headerlink" href="#kaliplar" title="Bu başlık için kalıcı bağlantı">#</a></h1>
+<p>Gerçek tür olmayan, yani sanal bir kavram olan kalıplar tür kavramındaki
+tasarım eksiğini kapamayı amaçlar.</p>
+<p>Mesela, C dilinde en basit yapı türlerinden olan zincirler için
+her bir farklı türdeki zincir elemanı için yeniden tür tanımlamak zorunda kalıyoruz.</p>
+<p>Dahası C++ ve Rust gibi dillerde elimizde var olan ve yapısı, boyutu, sıralaması
+belirgin olan türler taçlandırılıyor ve türün boyutu ya da sıralaması değişebiliyor.
+Bu konuda biz yazılımcıların bu dillerin tanıştırdığı harika özelliği suistimal etmemizin
+de payı tabi ki yadsınamaz ama sistem yazılımcıları açımızdan çok ciddi bir
+belirsizlik ve bir takım hata ayıklamalar samanlıkta iğne aramaya dönüşüyor.</p>
+<p>Bu iki soruna karşılık Örs dili kalıp kavramını öne sürdü. Böylece,
+‘kalıp’ kavramı vasat türler
+kavram bütünlüğünü, yapısal katılığını korurken kalıplar aracılığıyla
+hem tanım tekrarının
+önüne geçebilmek hem de biz sistem yazılımcılarının haklı
+takıntılarına çözüm üretmeyi amaçlıyor.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kalıp</span> <span class="n">Dal</span> <span class="n">x</span>
+<span class="p">{</span>
+  <span class="n">Öz</span>       <span class="n">x</span><span class="p">;</span>
+  <span class="n">Önceki</span>  <span class="o">*</span><span class="n">Dal</span><span class="s1">&#39;x;</span>
+  <span class="n">Sonraki</span> <span class="o">*</span><span class="n">Dal</span><span class="s1">&#39;x;</span>
+<span class="p">}</span>
+
+<span class="n">kalıp</span> <span class="n">Zincir</span> <span class="n">x</span>
+<span class="p">{</span>
+  <span class="n">boyut</span> <span class="n">t32</span><span class="p">;</span>
+  <span class="n">Baş</span> <span class="o">*</span><span class="n">Dal</span><span class="s1">&#39;x;</span>
+  <span class="n">Son</span> <span class="o">*</span><span class="n">Dal</span><span class="s1">&#39;x;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Yukarıdaki örnek Örs’ün zincir kütüphanesinden alıntı. Basitçe anlaşılacağı üzere
+kalıp ‘zincir’ ne olduğu bilinmeyen ‘x’ türü ile taçlandırılana kadar derleyici hafızasında
+özel bir sanal tanım olarak yer alıyor. Genel yapısı belirgin olsa da boyutu belli olmadığı
+için gerçek bir tür değil ve tamamen sanal.</p>
+<p>Kalıplar herhangi değişken ya da değerin türünü belirlerken anlam kazanıyor.
+Mesela yukarıdaki zinciri tam türüyle taçlandıralım.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">ZincirÖrneği</span>
+<span class="p">{</span>
+  <span class="n">değer</span> <span class="n">rakamlar</span> <span class="n">Zincir</span><span class="s1">&#39;tam;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Buyrun artık elimizde canlı, tam türüyle taçlandırılmış zincir türü var.</p>
+<hr class="docutils" />
+<section id="kalip-islemler">
+<h2>Kalıp işlemler:<a class="headerlink" href="#kalip-islemler" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Nam-ı diğer sanal işlemler. Malûmunüz üzere kalıplar sanal olduğu için
+onlara bağlanan işlemler de sanal olur. Yukarıdaki örneği devam ettirelim:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">öz</span> <span class="n">Zincir</span><span class="s1">&#39;x</span>
+<span class="n">sanal</span> <span class="n">iş</span> <span class="n">Ekle</span> <span class="n">Veri</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span>
+<span class="p">{</span>
+  <span class="n">Dal</span> <span class="o">:=</span> <span class="n">temiz</span><span class="p">(</span><span class="o">%*</span><span class="n">öz</span><span class="o">.</span><span class="n">Baş</span><span class="p">);</span>
+  <span class="n">Dal</span><span class="o">-&gt;</span><span class="n">Öz</span> <span class="o">=</span> <span class="n">Veri</span><span class="p">;</span>
+  <span class="n">eğer</span> <span class="n">öz</span><span class="o">.</span><span class="n">boyut</span><span class="p">:</span>
+  <span class="p">{</span>
+    <span class="n">Dal</span><span class="o">-&gt;</span><span class="n">Önceki</span>     <span class="o">=</span> <span class="n">öz</span><span class="o">.</span><span class="n">Son</span><span class="p">;</span>
+    <span class="n">öz</span><span class="o">.</span><span class="n">Son</span><span class="o">-&gt;</span><span class="n">Sonraki</span> <span class="o">=</span> <span class="n">Dal</span><span class="p">;</span>
+    <span class="n">öz</span><span class="o">.</span><span class="n">Son</span>          <span class="o">=</span> <span class="n">Dal</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">değilse</span>
+  <span class="p">{</span>
+    <span class="n">öz</span><span class="o">.</span><span class="n">Son</span> <span class="o">=</span> <span class="n">Dal</span><span class="p">;</span>
+    <span class="n">öz</span><span class="o">.</span><span class="n">Baş</span> <span class="o">=</span> <span class="n">Dal</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">öz</span><span class="o">.</span><span class="n">boyut</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">dön</span> <span class="n">Dal</span><span class="o">-&gt;</span><span class="n">Öz</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="n">iş</span> <span class="n">ZincirÖrneği</span>
+<span class="p">{</span>
+  <span class="n">değer</span> <span class="n">rakamlar</span> <span class="n">Zincir</span><span class="s1">&#39;tam;</span>
+
+  <span class="n">her</span> <span class="n">değer</span> <span class="n">i</span> <span class="n">tam</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">:</span>
+    <span class="n">rakamlar</span><span class="o">.</span><span class="n">Ekle</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="taclar-ve-donatimlar">
+<h2>Taçlar ve Donatımlar:<a class="headerlink" href="#taclar-ve-donatimlar" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Aşağıda çok kullandığımız çizelge veri türü var.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kalıp</span> <span class="n">kök</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span>
+<span class="p">{</span>
+  <span class="n">Sıradaki</span> <span class="o">*</span><span class="n">kök</span><span class="s1">&#39;x,y;</span>
+  <span class="nb">hash</span>      <span class="n">d32</span><span class="p">;</span>
+  <span class="n">ad</span>        <span class="n">x</span><span class="p">;</span>
+  <span class="n">öz</span>        <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">kalıp</span> <span class="n">k</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span>
+<span class="p">{</span>
+  <span class="n">boyut</span>      <span class="n">tam</span><span class="p">;</span>
+  <span class="n">hacim</span>      <span class="n">doğal</span><span class="p">;</span>
+  <span class="n">yığın</span>      <span class="n">dizi</span><span class="p">::</span><span class="n">k</span><span class="s1">&#39;*kök&#39;</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span>
+  <span class="n">Nesneler</span> <span class="o">**</span><span class="n">kök</span><span class="s1">&#39;x,y;</span>
+<span class="p">}</span>
+
+<span class="n">iş</span> <span class="n">DonatımÖrneği</span>
+<span class="p">{</span>
+  <span class="n">değer</span> <span class="n">sözlük</span> <span class="n">k</span><span class="s1">&#39;metin,tam;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Bu örneğin içeriği değişebilir ve konumuz dışında ama
+fark ettiğiniz üzere x ve y olası türleri sanki işlemlerdeki
+değişken kavramı gibi davranıyor.
+Göze öyle görünse de gerçekte tabi ki de kesinkes öyle değil.
+Burada bu kavram çatışmasının önüne geçmek için kalıpların kabul ettiği olası tür simgelerini
+‘taç’ olarak adlandırmayı ve kavramlandırmayı seçtik.</p>
+<p>Herhangi bir kalıp ikiden fazla türle taçlandırılamaz ve o şekilde tanımlanamaz.
+İkiden fazla tacın aslında gereksiz olduğu bir yana Örsün tasarım ilkeleriyle de tutarlıdır.
+Yani Örs mantığına göre siz kalıp için ikiden fazla taç tanımlamışsanız sizin kalıbınızda bir
+sorun vardır.</p>
+<p>Mesela diyelim ki yukarıdaki ‘kök’ kalıbı 3 taç kabul ediyor.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kalıp</span> <span class="n">kök</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span>
+<span class="p">{</span>
+  <span class="n">Sıradaki</span> <span class="o">*</span><span class="n">kök</span><span class="s1">&#39;x,y;</span>
+  <span class="nb">hash</span>      <span class="n">z</span><span class="p">;</span>
+  <span class="n">ad</span>        <span class="n">x</span><span class="p">;</span>
+  <span class="n">öz</span>        <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Bu örnekte bu kalıp belli ki çizelge algoritması tarafından kullanılacak ve ‘hash’ üyesinin
+bit genişliği algoritma için önemli zira diyelim ki d64 türünde olsaydı farklı sabit ya da
+algoritma kullanmanız gerebilirdi.
+Evet değişken doğalı sözlük algoritmaları var ama
+‘k’ veri türü o değişken doğalı algoritmayla uyum sağlayamaz. Yani ? Yani kalıp tanımında sorun var.</p>
+<p>Örs’te kalıp da dahil tüm diğer kavramları olabildiğince doğrusal düşünmek istiyoruz.
+İkili tacı sakın küçümsemeyin. O iki tacın içine yüz tane farklı iç içe geçmiş donatılmış tür
+yerleştirebilirsiniz ama eğer veri türlerini bu şekilde saçaklandırma huyunuzun
+Örs’ün kendi tasarım kaidelerini çiğneyip desteklemesini beklemeyiniz.</p>
+<p>Donatım kavramı ise başlık altındaki misalde görüldüğü üzere kalıpların türe dönüştüğünde
+aldığı olası türlere atıfta bulunuyor.
+Malûm örnek için metin ve tam sayı sözlüğü değeri ‘k’ kalıbı ‘metin’ ve ‘tam’ türleri ile donatılmış.</p>
+<p>Peki bu iki muğlak kavramı sanal işlemler için de kullanabilir miyiz ?
+Buradaki uygulamasını kabul etmediğimiz takdirde, elbette. Farkı ise sanal
+işlemlerde tıpkı işlemler gibi 16’dan fazla değişken almazlar
+ve bu değişkenlerin muğlak türlerine hitaben ‘taç’;
+türü belirlenmiş, yani çağrılmış, hallerine hitaben ‘donatım’ kavramlarını
+bire bir olmamak şartıyla fevkâlade kullanabiliriz.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="tur.html" title="önceki sayfa">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">önceki</p>
+            <p class="prev-next-title">Türler</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="yal%C4%B1n.html" title="sonraki sayfa">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">sonraki</p>
+        <p class="prev-next-title">Yalın tür tanımları</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By musakalayci<br/>
+  
+      &copy; Copyright 2022, musakalayci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Hafıza &#8212; Örs Kılavuz</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../_static/translations.js"></script>
+    <link rel="index" title="Dizin" href="../../genindex.html" />
+    <link rel="search" title="Ara" href="../../search.html" />
+    <link rel="next" title="İşlemler" href="islemler.html" />
+    <link rel="prev" title="Diziler" href="diziler.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="tr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Örs Kılavuz</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  İçerik:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../giris.html">
+   İçindekiler
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../giris.html">
+     Giriş
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/onsoz.html">
+       Hedefler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/tan%C4%B1t%C4%B1m.html">
+       Tanıtım
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/kurulum.html">
+       Kurulum
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/derleme.html">
+       Derleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../h%C4%B1zl%C4%B1_tan%C4%B1t%C4%B1m.html">
+     Tanıtım
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="yorumlar.html">
+       Yorumlar
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="degerler.html">
+       Değerler
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="sat%C4%B1rlar.html">
+       Satırlar
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/dongu_sat%C4%B1rlar%C4%B1.html">
+         Döngü Satırları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/kosullu_sat%C4%B1rlar.html">
+         Koşullu Satırlar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/y%C3%B6nlendirmeler.html">
+         Yönlendirmeler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/durum.html">
+         Durum ve Seçimler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="ifadeler.html">
+       İfadeler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/bo%C5%9F.html">
+         Boş
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/say%C4%B1.html">
+         Sayılar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/diziler.html">
+         Diziler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/metin.html">
+         Metinler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/temel_i%C5%9Flemler.html">
+         Temel İşlemler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="diziler.html">
+       Diziler
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Hafıza
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="islemler.html">
+       İşlemler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="konumlar.html">
+       Konumlar
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="turler.html">
+       Türler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/yap%C4%B1taslar%C4%B1.html">
+         Yapıtaşları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/sayac.html">
+         Sayaç
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/tur.html">
+         Türler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/kal%C4%B1p.html">
+         Kalıplar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/yal%C4%B1n.html">
+         Yalın tür tanımları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/ortak.html">
+         Ortak
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="birimler.html">
+       Birimler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="yine_yeniden_islemler.html">
+       Yine Yeniden İşlemler
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ornek.html">
+   Örnek
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/musakalayci/ors"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/bolumler/tanıtım/hafıza.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yeni">
+   Yeni:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#temiz">
+   Temiz:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yenile">
+   Yenile:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bosalt">
+   Boşalt:
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Hafıza</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yeni">
+   Yeni:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#temiz">
+   Temiz:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yenile">
+   Yenile:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bosalt">
+   Boşalt:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="hafiza">
+<h1>Hafıza<a class="headerlink" href="#hafiza" title="Bu başlık için kalıcı bağlantı">#</a></h1>
+<section id="yeni">
+<h2>Yeni:<a class="headerlink" href="#yeni" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>İşletim sisteminden istenilen boyutta yeni hafıza
+konumu istemek için kullanılan ifadedir. Sadece ve sadece
+tür ifadesini kabul ederler ve diğer ifadelerin ise türünü alıp
+ona göre işlevlerini gerçekleştirirler. Mesela:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">Sayılar</span> <span class="o">*</span><span class="n">tam</span> <span class="o">=</span> <span class="n">yeni</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+<span class="o">//</span> <span class="mi">20</span> <span class="n">X</span> <span class="mi">4</span> <span class="n">baytlık</span> <span class="n">dizinin</span> <span class="n">konumunu</span> <span class="n">dönecek</span>
+<span class="o">//</span> <span class="n">ve</span> <span class="n">bu</span> <span class="n">konum</span> <span class="n">sayılar</span> <span class="n">değerinde</span> <span class="n">tutulacak</span><span class="o">.</span><span class="n">x</span>
+<span class="n">değer</span> <span class="n">Matriks</span> <span class="o">**</span><span class="n">tam</span> <span class="o">=</span> <span class="n">yeni</span><span class="p">(</span><span class="o">%</span><span class="n">Sayılar</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+<span class="o">//</span> <span class="n">Sayılar</span> <span class="n">değerinin</span> <span class="n">türü</span> <span class="n">bir</span> <span class="n">konum</span> <span class="n">olduğu</span> <span class="n">için</span>
+<span class="o">//</span> <span class="p">(</span><span class="n">konum</span> <span class="n">genişliği</span><span class="p">)</span> <span class="n">x</span> <span class="mi">20</span> <span class="n">baytlık</span> <span class="n">bir</span> <span class="n">konum</span> <span class="n">dizisi</span> <span class="n">dönecek</span> <span class="n">ve</span> <span class="n">matriks</span> <span class="n">olacak</span><span class="o">.</span>
+<span class="o">//</span> <span class="n">ama</span> <span class="n">farkettiğiniz</span> <span class="n">üzere</span> <span class="n">matriksin</span> <span class="n">satırları</span> <span class="n">boş</span><span class="o">.</span>
+<span class="n">değer</span> <span class="n">DoluMatriks</span> <span class="o">**</span><span class="n">tam</span> <span class="o">=</span> <span class="n">yeni</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">]);</span>
+<span class="o">//</span> <span class="n">bu</span> <span class="n">satırda</span> <span class="n">ise</span> <span class="n">yeni</span> <span class="n">ifadesi</span> <span class="mi">20</span><span class="n">x20</span><span class="s1">&#39;lik tam sayı matriksi oluşturdu.</span>
+</pre></div>
+</div>
+<p>Yeni ifadesinin C dilindeki karşılığı hepimizin bildiği malloc işlemidir. Mesela:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">Sayılar</span> <span class="o">*</span><span class="n">tam</span> <span class="o">=</span> <span class="n">yeni</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+<span class="o">//</span> <span class="n">yukarıdaki</span> <span class="n">Örs</span> <span class="n">satırı</span> <span class="n">ile</span><span class="p">;</span> <span class="n">aşağıdaki</span>
+<span class="nb">int</span><span class="o">*</span> <span class="n">Sayılar</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">20</span> <span class="o">*</span> <span class="n">sizedf</span><span class="p">(</span><span class="nb">int</span><span class="p">));</span>
+<span class="o">//</span> <span class="n">C</span> <span class="n">satırı</span> <span class="n">özlerinde</span> <span class="n">bire</span> <span class="n">bir</span> <span class="n">aynıdır</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="temiz">
+<h2>Temiz:<a class="headerlink" href="#temiz" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Yeni ifadesinden sonra işletim sisteminin yazılıma tahsis edeceği
+hafızanın içeriği bilinemez. Bu yüzden genelde C dilinde yazarken
+hafıza ayrıldıktan sonra onu temizleriz.
+Tam bu noktada temiz ifadesi anlamlı oluyor. Mesela yukarıdaki örneği tekrar
+ele alalım:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">Sayılar</span> <span class="o">*</span><span class="n">tam</span> <span class="o">=</span> <span class="n">temiz</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+</pre></div>
+</div>
+<p>Bu örnekte ise temiz ifadesinin anlamı 20X4 bayt genişliğinde
+sıfırlanmış tam sayı dizisidir.</p>
+</section>
+<section id="yenile">
+<h2>Yenile:<a class="headerlink" href="#yenile" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>İşletim sistemi tarafından öncesinde ayrılmış kaynağı daraltmak
+ya da genişletmek için kullanılır. C dilindeki karşılığı realloc işlemidir.</p>
+<p>Sil:
+^^^
+İşletim sisteminin bize verdiği kaynağın görevi sona erdikten sonra
+eğer ki bilgisayar hafızasının veri çöplüğüyle dolmasını istemiyorsak;
+kaynağı sahibine geri vermemiz gerekiyor.</p>
+<p>‘Sil’ imgesi bir satırdır ve bir değer dönmez.</p>
+<p>Silinen konum değerleri boşlanır. Yani konumun yeni sayısal değeri 0’dır.</p>
+<p><strong>Mesela</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">Sayılar</span> <span class="o">*</span><span class="n">tam</span> <span class="o">=</span> <span class="n">temiz</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+<span class="n">her</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nd">@tam</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span> <span class="n">i</span><span class="o">++</span><span class="p">:</span>
+  <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span><span class="s2">&quot;0 mı : </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">Sayılar</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">));</span>
+<span class="o">/*</span>
+  <span class="n">sıfır</span> <span class="n">olduğunu</span> <span class="n">gösterdik</span> <span class="n">ve</span> <span class="n">işimiz</span> <span class="n">bitti</span><span class="p">,</span>
+  <span class="n">şimdi</span> <span class="n">kaynağı</span> <span class="n">geri</span> <span class="n">verme</span> <span class="n">zamanı</span><span class="o">.</span>
+<span class="o">*/</span>
+<span class="n">sil</span> <span class="n">Sayılar</span><span class="p">;</span>
+<span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Sayılar değerindeki konum : %p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Sayılar</span><span class="p">);</span>
+<span class="o">/*</span>
+  <span class="n">Canlı</span> <span class="n">hata</span> <span class="n">verilmediyse</span> <span class="n">arayüzde</span> <span class="p">:</span>
+  <span class="s2">&quot;Sayılar değerindeki konum : (nil)&quot;</span>
+  <span class="n">gibi</span> <span class="n">bir</span> <span class="n">çıktı</span> <span class="n">alınacaktır</span><span class="o">.</span>
+<span class="o">*/</span>
+</pre></div>
+</div>
+</section>
+<section id="bosalt">
+<h2>Boşalt:<a class="headerlink" href="#bosalt" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Görevi basitçe konuma gidip içeriğini sıfırlamaktır.
+İki farklı söz dizimi vardır. İlk söz diziminde;
+İlk değişkeni konumken,
+ikincisi boşaltırken o konumda ne kadar ilerleyeceği bilgisidir.</p>
+<p>Boşalt imgesi bir satırdır.</p>
+<p><strong>Mesela</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">Sayılar</span> <span class="o">*</span><span class="n">tam</span> <span class="o">=</span> <span class="n">yeni</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+<span class="n">boşalt</span> <span class="n">Sayılar</span><span class="p">,</span> <span class="mi">20</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Sayılar dizisindeki tüm tam sayı hücrelerini boşalt satırı sıfırlayacaktır.</p>
+<p>İkinci söz dizisi ise tekildir. Konum alıp değerini sıfırlar.</p>
+<p><strong>Mesela</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">değer</span> <span class="n">Sayılar</span> <span class="o">*</span><span class="n">tam</span> <span class="o">=</span> <span class="n">yeni</span><span class="p">(</span><span class="n">tam</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+<span class="n">boşalt</span> <span class="o">&amp;</span><span class="n">Sayılar</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>Bu örnekte ise yukarıdakinin aksine sadece 2 nolu hücredeki tam sayı boşaltılmıştır.</p>
+<p>Konumu ve türü bilinen herşey sıfırlanabilir.
+Burada dikkat edilmesi gereken türün boyutu ve canlılığıdır.
+Canlı ayrılan kaynaklarda eğer ki ne kadar kaynak ayrıldığı biliniyorsa
+sorun olmaz ama bilinmiyorsa ve işletim sistemi tarafından belirlenin alanın
+dışına taşılmışsa işletim sistemi hata verir ve yazılımı ‘SIGSEV’ koduyla sonlandırır.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="diziler.html" title="önceki sayfa">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">önceki</p>
+            <p class="prev-next-title">Diziler</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="islemler.html" title="sonraki sayfa">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">sonraki</p>
+        <p class="prev-next-title">İşlemler</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By musakalayci<br/>
+  
+      &copy; Copyright 2022, musakalayci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,969 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Konumlar &#8212; Örs Kılavuz</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../_static/translations.js"></script>
+    <link rel="index" title="Dizin" href="../../genindex.html" />
+    <link rel="search" title="Ara" href="../../search.html" />
+    <link rel="next" title="Türler" href="turler.html" />
+    <link rel="prev" title="İşlemler" href="islemler.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="tr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Örs Kılavuz</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  İçerik:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../giris.html">
+   İçindekiler
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../giris.html">
+     Giriş
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/onsoz.html">
+       Hedefler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/tan%C4%B1t%C4%B1m.html">
+       Tanıtım
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/kurulum.html">
+       Kurulum
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../giris/derleme.html">
+       Derleme
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../h%C4%B1zl%C4%B1_tan%C4%B1t%C4%B1m.html">
+     Tanıtım
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="l%C3%BCgat.html">
+       Lügât
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="yorumlar.html">
+       Yorumlar
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="degerler.html">
+       Değerler
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="sat%C4%B1rlar.html">
+       Satırlar
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/dongu_sat%C4%B1rlar%C4%B1.html">
+         Döngü Satırları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/kosullu_sat%C4%B1rlar.html">
+         Koşullu Satırlar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/y%C3%B6nlendirmeler.html">
+         Yönlendirmeler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="sat%C4%B1rlar/durum.html">
+         Durum ve Seçimler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="ifadeler.html">
+       İfadeler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/bo%C5%9F.html">
+         Boş
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/say%C4%B1.html">
+         Sayılar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/diziler.html">
+         Diziler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/metin.html">
+         Metinler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="ifadeler/temel_i%C5%9Flemler.html">
+         Temel İşlemler
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="diziler.html">
+       Diziler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="haf%C4%B1za.html">
+       Hafıza
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="islemler.html">
+       İşlemler
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Konumlar
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="turler.html">
+       Türler
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/yap%C4%B1taslar%C4%B1.html">
+         Yapıtaşları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/sayac.html">
+         Sayaç
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/tur.html">
+         Türler
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/kal%C4%B1p.html">
+         Kalıplar
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/yal%C4%B1n.html">
+         Yalın tür tanımları
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="turler/ortak.html">
+         Ortak
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="birimler.html">
+       Birimler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="yine_yeniden_islemler.html">
+       Yine Yeniden İşlemler
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ornek.html">
+   Örnek
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/musakalayci/ors"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/bolumler/tanıtım/konumlar.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#konum-dereceleri">
+   Konum Dereceleri:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boyutlar">
+   Boyutlar:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ceviriler">
+   Çeviriler:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sey">
+   Şey:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sonuc">
+   Sonuç:
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Konumlar</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#konum-dereceleri">
+   Konum Dereceleri:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boyutlar">
+   Boyutlar:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ceviriler">
+   Çeviriler:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sey">
+   Şey:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sonuc">
+   Sonuç:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="konumlar">
+<h1>Konumlar<a class="headerlink" href="#konumlar" title="Bu başlık için kalıcı bağlantı">#</a></h1>
+<p>Sistem dillerinin en çetrefilli ama eğlenceli konusu: Konumlar.</p>
+<p>Basitçe hayal edelim; Bir bakkal deposu var ve burada sayılamayacak kadar çok kutu ve
+içinde de bir takım abur cuburlar var. Tüm bu kutular numaralanmış ve numaralanmış
+raflara yerleştirilmiş. Kim yerleştirdi bilmiyoruz da umursamıyoruz da. Amacımız
+bir an önce ‘çuklatalara’ erişmek. İşin güzel yanı laz bakkal bize demiş ki
+&quot;Al üzerinde ‘LB 22 543’ yazan bu kağıdı takip et,
+dilediğin kadar çuklataya yumul gitsin.&quot;</p>
+<p>Ben olsam, kağıttaki bilgiyi yorumlamakla başlardım. Derdim ki,
+&quot;Tamam LB laz bakkal demek ve zaten depodayız,
+22 ve 543 ise ya raf ya da kutu numarası olamalı.
+İlkin 22 numaralı rafla başlayayım uymazsa tersini denerim.&quot;
+Basit bir strateji ve elimde bir kutu çuklata var.</p>
+<p>Konumlar kunusu da bu örneğe benziyor. Konu çetrefilli çünkü
+konumların gösterdiği yerlerde çuklata yok yine bir diğer sayı var. Eğlenceli
+çünkü o sayı her anlama gelebilir.
+Mesela veri tabanındaki en sevdiğimiz çuklata kutusunun depodaki konumunu verebilir
+ya da o konumda komik vidyo adresi olabilir yani herşey olabilir.
+Örs dilinde tabi ki de konumlar diye bir özellik yok;
+hatta diğer sistem dillerinde de yok ama kavram hem sanal dünyada hem de gerçek dünyada
+temel bir konu olarak yer aldığı gibi Örs’de dahil tüm sistem dillerinde yer alıyor.</p>
+<p>Sadece Örs değil diğer sistem dillerinde de konum kavramı bir soyutlamadır.
+Özlerinde mimari boyutunda doğal sayılardır.
+Mesela 64 bitlik işlemcideki konumlar da 64 bit genişliğindedir ve bu konumlar basitçe bilgisayar
+hafızasındaki 64 bitlik hücrelerin numaralarıdır.</p>
+<p>Düz mantıkla bilgisayar belleği uç uca dizilmiş boncuklar dizisi gibi düşünülebilir. Mesela
+benim 64 bitlik bilgisayarın 8gb hafızası var ve bu <strong>düz mantıkla</strong> 0’dan (8gb/8)’e kadar
+numaralanmış 8 bitlik boncuklar var ve benim öyle bir kavrama ihtiyacım var ki ihtiyaç halinde
+bu boncuklara ulaşıp içindekini alayım.</p>
+<p>Bu kavram konumlar oluyor. Bir önceki <strong>düz mantık</strong> örnekte gerçek konumlar var.
+Yukarıdaki Laz Bakkal örneğinin aksine elimizde doğrudan değeri gösteren doğrusal konum var.
+Gerçekte olan şey ise daha karmaşık.
+İşletim sistemi belleği bölgelere ayırıyor ve bu bölgeleri işlemler ihtiyaç duyduğunda onlara atıyor.
+Yani siz bir konumda bulunan değere ulaşmak istediğinizde önce işletim sisteminin yazılımıza atadığı bölgeye,
+sonra değere ulaşıyorsunuz ve bu ucu açık kavrama sanal konum deniyor ki yukarıdaki Laz Bakkal örneğinde,
+elimizdeki kağıtta yazan konum sanal bir konum.</p>
+<p>Örs konumlar konusunu C dilindeki gibi ve Java, C#, OCaml gibi dillerin aksine, yorumsuz ele alır.
+Zira zaten işletim sistemi sanal konum vereceği için bunun üzerine bir algoritma daha eklemek
+yazılımın hızını azaltır. Böylece işletim sisteminin bize ayırdığı bölüme doğrudan erişim sağlanabilir.
+Bu kulağa hoş gelse de aynı zamanda olabildiğince tehlikelidirde.
+Diğer taraftan konumları yorumlamadan ele almak
+Örs’ün tasarım ilkeleriyle de çelişmez. Örs’ün tasarım felsefesi bu ve benzeri olaylara
+&quot;eğer bir hata verilecekse bırakalım verilsin&quot; yargısıyla yaklaşır.
+Çünkü konumlarla ilgili hatalar konumların doğrudan erişim
+yeteneğinden ziyade, hafıza yetersizliği, sıralama yanlışlığı,
+atanan bölge dışına taşma, boş konum ve benzeri sorunlardan kaynaklanır
+ve benzeri hatalar yazılımın hata ayıklama sürecinde engellenebilir ki
+yukarıdaki yargının atıfta bulunduğu anlam da budur.
+Bu yönüyle konumlarla ilgili olası tehlikeler yazılımcının sorumluluğundadır ve
+ne işletim sisteminin ne de sistem dillerinin sorumluluğunda değildir.</p>
+<p>Örs dilinde ve diğer sistem dillerinde konumlar <strong>‘mimari’</strong>
+bayt genişliğinde yapıtaşlarıdır. Bu özelliğe atıfta bulunmak
+<strong>‘şey’</strong> yapıtaşının kavramsal görevlerinden de bir tanesidir.</p>
+<p>Örs konumları kullanmak için C söz dizisinden yararlanır.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">KonumÖrneği</span>
+<span class="p">{</span>
+  <span class="n">değer</span> <span class="n">a</span> <span class="n">t64</span> <span class="o">=</span> <span class="mh">0x0_47_46_45_44_43_42_41</span><span class="p">;</span>
+  <span class="n">değer</span> <span class="n">K</span> <span class="o">*</span><span class="n">t64</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span> <span class="o">//</span> <span class="n">a</span><span class="s1">&#39;nın konumunu K&#39;</span><span class="n">ye</span> <span class="n">geçiriyoruz</span><span class="o">.</span>
+  <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span>
+    <span class="s2">&quot;a: 0x%llx</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;a&#39;nın konumu: %p</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;K: 0x%llx</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;K&#39;nın konumu: %p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">a</span><span class="p">,</span> <span class="o">//</span> <span class="n">a</span> <span class="n">değeri</span>
+    <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">//</span> <span class="n">a</span><span class="s1">&#39;nın konumunun alındığı ifade</span>
+    <span class="o">*</span><span class="n">K</span><span class="p">,</span> <span class="o">//</span> <span class="n">K</span><span class="s1">&#39;deki konuma gidildiği ifade</span>
+    <span class="n">K</span><span class="p">);</span> <span class="o">//</span> <span class="n">ve</span> <span class="n">K</span> <span class="n">değerindeki</span> <span class="n">konum</span><span class="o">.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Tabi ki de böyle bir örneği gerçek hayatta pek kullanmazsınız.
+İşte tam burada bir kavramı sizinle tanıştırmam gerekiyor.</p>
+<hr class="docutils" />
+<section id="konum-dereceleri">
+<h2>Konum Dereceleri:<a class="headerlink" href="#konum-dereceleri" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">Giriş</span>
+<span class="n">argümanSayisi</span>   <span class="n">tam</span><span class="p">,</span>
+<span class="n">_argümanlar</span>   <span class="o">**</span><span class="n">t8</span>
+<span class="p">{</span>
+  <span class="o">//</span><span class="n">argümanları</span> <span class="n">konumlarından</span> <span class="n">yazdır</span><span class="o">.</span>
+  <span class="n">her</span> <span class="n">Argüman</span> <span class="o">:=</span> <span class="n">_argümanlar</span><span class="p">;</span> <span class="o">*</span><span class="n">Argüman</span><span class="p">;</span> <span class="n">Argüman</span><span class="o">++</span><span class="p">:</span>
+    <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span>
+      <span class="s2">&quot;=&gt; konum değeri: %p, konumdaki değer: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+       <span class="n">Argüman</span><span class="p">,</span>
+      <span class="o">*</span><span class="n">Argüman</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Yukarıda ise <strong>‘_argümanlar’</strong> değişkeninde harfler
+dizisinin dizisinin konumu <strong>Giriş</strong> işlemine verilmiş.</p>
+<p>Örnekte görüldüğü üzere <strong>‘_argümanlar’</strong>’ değişkeninin türünde iki yıldız var.
+Derece dediğimize göre şunu diyebilir miyiz : &quot;<strong>’_argümanlar’</strong> değişkeni iki derecelidir&quot; ?
+Malesef hayır. Değerin yaşadığı konumu saymayı unuturuz. Yani aslında
+<strong>‘_argümanlar’</strong> değişkeni 3 dereceli bir değer. Çünkü tüm değişkenler aynı zamanda
+birer değer.
+Tanımladığınız tüm değerlere ve işlemlere atıfta bulunulurken, onların fiziki konumlarındaki veri
+işlem yığınına konulacak. Özet olarak değerlere olan herbir atfınız için
+zaten konuma gidip derecesini düşürüp 0 dereceli veriye
+(her hangi bir veri olabilir, hatta 150 dereceli değişkenin konumu bile olabilir
+ama verilerin derecesi 0) erişiliyor.</p>
+<p>Bu manada birinci dereceden değerler tüm tanımlı değerler oluyor.
+Ayrıca, konum boyutu arttıkça derecesi de artıyor.</p>
+<p>Burada elimizde kendi kendini gösteren kavram var.
+Biraz kafa karıştırıcı olsa da iletişim kuramının çıkmaz sokaklarında sıklıkla bu tarz
+varlıklara rastlarsınız.</p>
+<p>Bu kavramı tanımlama gereği duydum zira hem derleyicide kullanılıyor, hem llvm altyapısında,
+hem de siz aslında farkında olmadan zihninizde zaten o şekilde canlandırıyorsunuz. Diğer taraftan,
+kavramı tanımlamak bizi dizinin dizinin disinin dizinin konumu gibi
+çirkin anlatım kullanmaktan koruyacak.</p>
+<p>Peki derecesi olmayan değer olabilir mi ? Tabi ki de hayır.
+Derecesi yoksa yaşadığı konum da yoktur ve yani o değer yoktur.
+Olmayan bir değerin derecesi olabilir mi ? Hayır.</p>
+<p>Diyelim ki <strong>‘_argümanlar’</strong> değerine ‘**_argümanlar’ ifadesi ile atıfta bulundunuz.
+İlkin <strong>‘_argümanlar’</strong>’ın yaşadığı konuma, sonra orada tutulan konumdaki diziye,
+sonra ise dizinin ilk harfine gideceksiniz.</p>
+<p>Örneğe tekrar dönelim: Elimizde 3 dereceli değer var.
+Yani bir dizi konumu var ve o konumda diğer dizilere olan konumlar tutuluyor.
+Peki ben bir derece indirsem yani <strong>‘_argümanlar’</strong> değerinin yaşadığı yere gitsem ve
+bunu farklı bir değere atayıp konumunu artırarak içteki 2 dereceli dizileri yazdıra bilir miyim ?
+Evet ve yukarıdaki örnek tam olarak bunu yapıyor.</p>
+<div class="admonition note">
+<p class="admonition-title">Not</p>
+<p>Tekrar tekrar belirtmek isterim: Tüm değerler zaten bir hafızadaki bir konumda yaşıyor. Çoğul dereceli
+değerlerle o konumları her hangi bir değer ile saklayabiliyoruz.</p>
+</div>
+<p>Fark edeceğiniz üzere konumlar ve diziler birbirleri ile bir şekilde ilişkili ama
+sanki ilişkiyi kuracak kavramı bilmiyoruz.</p>
+</section>
+<section id="boyutlar">
+<h2>Boyutlar:<a class="headerlink" href="#boyutlar" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Geometrideki ya da doğrusal cebirdeki boyut kavramının yazılıma izdüşümü denilebilir ama aynısı denemez.
+Mesela yukarıdaki <strong>‘_argümanlar’</strong> konumunda harf dizisi matriksi var ve
+biz bunun derecesini 2 düşürdüğümüzde (<strong>’**_argümanlar’</strong>);
+matriksteki [0,0] hücresindeki harfe erişiyoruz.</p>
+<p>Tıpkı nasıl geometride boyutlar var ise konumlarda içlerinde bulundurdukları veriye
+göre boyut anlamı kazanır ve işletim sistemi bu veriyi yapılandırılmış vereceği için dizilere erişir gibi erişilebilir.
+Bu yönüyle yukadıraki örneği aşağıdaki gibi yazabiliriz:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">Giriş2</span>
+<span class="n">argümanSayisi</span>   <span class="n">tam</span><span class="p">,</span>
+<span class="n">_argümanlar</span>   <span class="o">**</span><span class="n">t8</span>
+<span class="p">{</span>
+  <span class="o">//</span><span class="n">argümanları</span> <span class="n">konumlarından</span> <span class="n">yazdır</span><span class="o">.</span>
+  <span class="n">her</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">argümanSayisi</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">:</span>
+    <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span>
+      <span class="s2">&quot;=&gt; konum değeri: %p, konumdaki değer: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+       <span class="o">&amp;</span><span class="n">_argümanlar</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+        <span class="n">_argümanlar</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Bir önceki örnekle özünde aynı şeyi yapıyor ama fark ettiğiniz üzere ‘argümanSayısı’
+değeri bizim gezeceğimiz konumları sınırlıyor ve taşma tehlikesinin de önüne geçiyor.
+Olmaz ama diyelim ki konumu arttırarak ilerlediğimiz ‘Argüman’ değeri boş konuma denk gelmedi.
+O zaman işletim sisteminin yazılıma ayırdığı bölgenin dışına taşacağı için meşhur <strong>‘SIGSEGV’</strong>
+hatasını verecek ve 139 kodu ile sonlandırılacak.
+Şunu da eklemek gerekir ki; gözlemlerimden çıkardığım sezgisel sonuca göre
+pek çok yazılımcı ilk dereceyi unutup boyut ve derece kavramını karıştırıyor.
+Kavramları karıştırarak tasarım yapmaya çalışmak da doğal olarak hatalı sonuçlar doğuruyor.
+Bunlar göz önünde tutulunca ikinci yöntem daha güvenli.
+Ayrıca veri türü doğrusal olarak hem derleyici hem yazılımcı tarafından
+daha yapısal yorumlanıyor ve boyutlar derecelerin aksine elle tutup gözle görebileceğimiz bir kavrama
+dönüşmeye başlıyor. Doğal olarak tasarım bir kere cisimleşmeye başlayınca; olgunlaşıyor.</p>
+<p>Konu konum kavramı iken eklenmesi gereken bir diğer mevzu bu örnekteki ‘i’
+değerinin de bir konum olması. Dereceli değerlerle olan farkı dereceli değerler işletim sistiminin
+belirlediği standartlara uyarak hafızayı konumlandırıp erişirken;
+‘i’ değeri doğrusal yaklaşımla hafızaya erişiyor olması.
+Daha önce bahsettiğimiz sıralı numaralı boncuk dizisi örneğindeki konumlandırma yaklaşlaşımı ile
+buradaki ‘i’ değerinin yaklaşımı özlerinde aynı ve iki örnekte de doğrusal konumlandırma yapılıyor.</p>
+<p><strong>‘Giriş2’</strong> işlemindeki tek fark bu da değil. İkinci örnekteki print’in ikinci argümanı için yer alan
+<strong>(&amp;_argümanlar[i])</strong> ifadesinde konum alma işlemi kullanılırken,
+öncekinde üçüncü dereceden <strong>(Argüman)</strong> saf ifadesi yer almış ve ayrıca üçüncü argümandaki
+<strong>(*Argüman)</strong> ifadesi ise <strong>‘i’</strong> kadar ilerlenmiş konumun tuttuğu değeri dönüyor.
+Sanki <strong>‘&amp;’</strong> (konumlandırma işlemi) ile <strong>‘*’</strong> (derecelendirme işlemi) birbirinin
+ters işlemi gibi hissediliyor ve yukarıdaki <strong>tanımlı kavramların sınırında</strong>;
+evet iki işlem birbirinin tersi oluyor. Konumlandırma işlemi var olan değerin konumunu getirirken; <strong>‘*’</strong>
+işlemi var olan dereceli değerin tuttuğu konumun derecesini düşürüp; düşürülen değeri dönüyor.</p>
+<p>Ama bu ikisi de tekiller ve biz sıradaki konuma ulaşmak için tutulu konumu
+arttırmak ya da azaltmak zorundayız ki yukarıda anlattığımız gibi yan etkileri olan bir yöntem.
+Bu bağlamda dizi erişim işlemi gücünü gösteriyor. Dizi erişim işlemiyle, derecelendirme işlemi
+benzer görevleri paylaşsalarda aynı işlem değiller ama <strong>konumdaki veriler ardışık</strong>
+ise boyut kavramı hafızanın o <strong>ardışık</strong> parçasına diziymiş gibi erişmemizi sağlıyor.
+Mesela:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">BoyutKavramıÖrneği</span>
+<span class="p">{</span>
+  <span class="o">//</span> <span class="n">işletim</span> <span class="n">sisteminden</span> <span class="p">((</span><span class="n">t32</span><span class="s1">&#39;nin boyutu) X 20) bayt kadar</span>
+  <span class="o">//</span> <span class="n">hafıza</span> <span class="n">bölgesi</span> <span class="n">istiyoruz</span><span class="o">.</span>
+  <span class="n">Sayılar</span> <span class="o">:=</span> <span class="n">yeni</span><span class="p">(</span><span class="n">t32</span><span class="p">[</span><span class="mi">20</span><span class="p">]);</span>
+  <span class="o">//</span> <span class="n">işletim</span> <span class="n">sisteminin</span> <span class="n">bize</span> <span class="n">temizlemeden</span>
+  <span class="o">//</span> <span class="n">verdiği</span> <span class="n">bölgedeki</span> <span class="n">t32</span><span class="s1">&#39;leri yazdırıyoruz:</span>
+  <span class="n">her</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">:</span>
+    <span class="n">stdio</span><span class="p">::</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">&#39;ıncı pis değer : </span><span class="si">%d</span><span class="s2">; konumu : %p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="n">i</span><span class="p">,</span> <span class="n">Sayılar</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Sayılar</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+  <span class="o">//</span> <span class="n">işimizi</span> <span class="n">bitirdik</span> <span class="n">ve</span> <span class="n">bize</span> <span class="n">atanan</span> <span class="n">hafıza</span> <span class="n">bölgesini</span>
+  <span class="o">//</span> <span class="n">işletim</span> <span class="n">sistemine</span> <span class="n">geri</span> <span class="n">veriyoruz</span><span class="o">.</span>
+  <span class="n">sil</span> <span class="n">Sayılar</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Derecelendirme işleminin soyutluğu; erişim işlemi ile kayboluyor ve
+biz zihnimizde işletim sisteminden gelen bölgenin aslında bildiğin t32’li boncuklar dizisi
+olduğunu canlandırmaya başlıyoruz ve bu noktada konumlar ve dizilerin birbirleri ile ilişkisi
+belirmeye başlıyor.</p>
+<div class="admonition note">
+<p class="admonition-title">Not</p>
+<p>Peki şu vaka ile karşılaşabilir miydik ? Biz işletim sisteminden yeni bölge istedik ama
+gelen bölgedeki verilerin konumları ardışık değil. Linux ve Freebsd’de kesinlikle öyle değil ama diyelim ki
+öyle biz nasıl dereceler kavramını kullanarak ileri, geri konum aritmetiği yapacaktık ?
+Basitçe söyleyeyim yapamayacaktık. Eğer veri ardışık değilse zaten konum aritmetiği yapmanın
+ne anlamı var ve güvenilirliği. Fakat boyutlar ile dereceler ve konumlar ile diziler arasındaki
+kavram ilişkisi devam edecekti. Yine konumlara derecelendirerek erişecektik ve yine dizilere
+boyutlandırarak erişecektik. Sadece dereceli erişim yavaş olacaktı ki konum erişimi destekleyen
+canlı dillerde (C#, OCaml vs) konum erişimi yavaş olacaktı.
+Çünkü işletim sistemi ile sizin yazılımınız arasında hafıza yönetimi yapan temizlik algoritması var
+ve her konuma eriştiğinizde zaten işletim sisteminin sanal olan konumlarını bir de temizlik algoritmasının
+sanallaştırdığı konumları çözümlemeyi eklemek zorunda kalacaktık ve bu bize hız kaybettirecekti.</p>
+<p>O yüzdendir ki sistem dillerinin neredeyse tamamı hem temizlik algoritmalarını,
+hem de sanal makinaları ve diğer aracı algoritmaları reddeder. Çünkü bu seviyede bir hız kaybı
+işlevsel olarak kabul edilemez. Yazılımlarımızın öngörülebilir olmasını istiyoruz çünkü sistem dilleriyle
+genelde sürücüler, sanal makineler, işletim sistemleri, veritabanları vs gibi hayatî
+yazılımların en kötü senaryolarındaki hızları üzerinden hayatî hız hesaplamaları yapıyoruz ve
+her bir algoritmayı eklediğinizde, bu algoritmanın doğası nasıl olursa olsun, öngörülebilirlikten ödün
+veriliyor.</p>
+<p>Bu durumda şunu diyebilir miydik ? “Zaten işletim sistemleri ardışık verileri bize istediğimizde veriyor,
+hem sanal makinaların faydalarından yararlanır hem de sistem dillerinin hızlı doğasının tadını çıkarırdık.”
+Bunu yapmak tabi ki de mümkün ve zaten pek çok dil yapıyor. Yukarıda andığım C# çok iyi tasarlanmış;
+yıldırım hızında çalışan dillerden bir tanesi ama mesele o değil. Sistem dillerinin
+tasarım amacı bilgisayarla aracısız konuşmak. Yani malı toptancıdan değil fabrikadan alıyormuşsunuz gibi
+düşünün.</p>
+<p>Daha önemlisi hız kazanmak için olguları ve sorunları olabildiğince doğrusal düşünmek gerekiyor. Yukarıdaki
+t32X20’lik dizide ne yaparsan yap o diziyi gezmek için mecburen bir döngü kullanacaksınız ve
+O(n) öngörüsünde çalışacaksınız. Yani
+veri türünüz algoritmayı belirliyor. 2 boyutlu doğası olan bir tür için zorlasanız zorlasanız
+O(nlog(n)) senaryosunda algoritma geliştirebilirsiniz ki bu şu anlama geliyor elinizdeki veriye göre
+algoritma O(n^2) gibi de çalışabilir. Özet olarak kullandığınız tür algoritmanızı belirliyor.</p>
+</div>
+<p>Derleyicide gerçekleşen şey ise çok basit, derecelendirme işlemi konum aritmetiği yapmadan
+dereceyi düşürüp tutulu konumdaki veriyi getiriyor; dizi gibi yorumladığı konumlar için ise
+konum aritmetiği yapıp derecesini düşürerek veriyi dönüyor.</p>
+</section>
+<section id="ceviriler">
+<h2>Çeviriler:<a class="headerlink" href="#ceviriler" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Boyut ve derece kavramlarının kesiştiği yeri tartıştık ama bir soruyu cevaplamadık.
+Dizi erişim işlemi bir konumdan diğerine nasıl ilerliyor ya da geriliyor ?
+Basitçe cevap vereyim; genişliğine ve sıralama katsayısına göre.</p>
+<dl class="simple">
+<dt>::</dt><dd><p>Bu iki kavramı hafıza yönetimi
+başlığı altında ayrıntılı bir şekilde tartışacağız ama
+burada ‘sıralama’ kavramını hafıza yönetimindeki ilişkilerinden
+bağımsızmış gibi düşünmemiz gerekiyor.</p>
+</dd>
+</dl>
+<p>İyi güzel de <strong>‘yeni’</strong> işlemi özünde posix
+sistem çağrılarından biri olan <strong>‘malloc’</strong> işlemine
+gönderme yapıyor ve o işlem bize <strong>t8</strong> dizisi dönüyor. Nasıl oluyor da
+<strong>t8</strong> dizisini bir türmüş ya da diziymiş gibi kullanıyoruz. ?
+İşletim sisteminden alınan hafıza bölgesini,
+Örs derleyicisine hedef türün genişlik ve sıralama bilgilerine göre yorumlattırarak.
+Nesneler derlenirken, Örs onların genişlik ve sıralama bilgilerinin
+çok sıkı muhasebesini yapıyor.
+Yukarıda <strong>‘yeni(t32[20])’</strong> işlemi çağrısının sade posix malloc çağrısından farkı
+bu muhasebeden kaynaklanıyor.</p>
+<p>Çeviri işlemi dönülen değere istenilen sıralama ve genişlik bilgilerinin muhasebesini ekliyor
+ki taşma, yanlış okuma, boş konum vs gibi ciddi sorunlar
+derleme süresince yakalansın ve eğer muhasebe doğru
+yapılmıyorsa uyarı verilsin.
+Bu yönüyle çeviri işlemi gerçek işlem değildir.
+Derleyicinin genişlik ve sıralama muhasebesinin yönlendirilmesidir.
+‘BoyutKavramıÖrneği’ işlemini yeniden yazarak gösterelim:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">BoyutKavramıÖrneği2</span>
+<span class="p">{</span>
+  <span class="n">Sayılar</span> <span class="o">:=</span> <span class="o">&lt;*</span><span class="n">t32</span><span class="o">&gt;</span><span class="n">stdlib</span><span class="p">::</span><span class="n">malloc</span><span class="p">(</span><span class="mi">20</span><span class="o">*</span><span class="nd">@t32</span><span class="p">);</span>
+  <span class="n">her</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">:</span>
+    <span class="n">stdio</span><span class="p">::</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">&#39;ıncı pis değer : </span><span class="si">%d</span><span class="s2">; konumu : %p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="n">i</span><span class="p">,</span> <span class="n">Sayılar</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Sayılar</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+  <span class="n">sil</span> <span class="n">Sayılar</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Birinci örnekle özlerinde aynı ama çeviri işlemiyle
+<strong>‘Sayılar’</strong> değerinin <strong>t32</strong> konumu olduğu belirtiliyor. Diğer taraftan <strong>‘yeni’</strong>
+işlemi ise bu görevi gözlerden ırak bir şekilde zaten yapıyor ama gerçekleşen şey, sonuç, çıktı aynı.</p>
+<p>Konum çevrilerini sadece kaynak isterken değil,
+elimizdeki kaynaklar yorumlarken de kullanabiliriz.
+Mesela:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">KonumYorumuÖrneği</span>
+<span class="p">{</span>
+  <span class="o">//</span><span class="n">onaltılık</span> <span class="n">ascii</span> <span class="n">değerleri</span> <span class="n">içeren</span> <span class="n">bir</span> <span class="n">t64</span> <span class="n">sayısı</span> <span class="n">başlatıyoruz</span><span class="o">.</span>
+  <span class="o">//</span><span class="n">ilk</span> <span class="n">sekiz</span> <span class="n">baytın</span> <span class="mi">0</span> <span class="n">olduğunun</span> <span class="n">altını</span> <span class="n">çizerim</span><span class="o">.</span>
+  <span class="n">değer</span> <span class="n">sayı</span> <span class="n">t64</span> <span class="o">=</span> <span class="mh">0x0_47_46_45_44_43_42_41</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">t64</span> <span class="n">konumunu</span> <span class="n">yeni</span> <span class="n">değere</span> <span class="n">atıyoruz</span><span class="o">.</span>
+  <span class="n">SayıKonumu</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="n">sayı</span><span class="p">;</span>
+
+  <span class="o">//</span><span class="n">t64</span> <span class="n">konumunu</span><span class="p">,</span> <span class="n">t8</span> <span class="n">konumuna</span> <span class="n">çeviriyoruz</span>
+  <span class="n">Harfler</span>    <span class="o">:=</span> <span class="o">&lt;*</span><span class="n">t8</span><span class="o">&gt;</span><span class="n">SayıKonumu</span><span class="p">;</span>
+
+  <span class="o">//</span><span class="n">Sonuçları</span> <span class="n">yazdırıyoruz</span><span class="o">.</span>
+  <span class="n">stdio</span><span class="p">::</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sayı konumu: %p</span><span class="se">\n</span><span class="s2">Harfler konumu: %p</span><span class="se">\n</span><span class="s2">Harfler içeriği </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">SayıKonumu</span><span class="p">,</span> <span class="n">Harfler</span><span class="p">,</span> <span class="n">Harfler</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Burada t64 sayı değerinin konumu harfler dizisiymiş gibi yorumlanıyor.
+Derleyici ise 8 bayt genişliğindeki ve 8 bayt sıralamasındaki t64 konumunu,
+1 bayt genişliğinde ve sıralamasındaki t8 değerleri tutan Harfler konumuna çeviriyor.
+Bu konunun altı belirgin bir şekilde çizilmeli, çevirme işleminin bilgisayar, işlemci,
+işletim sistemi için anlamı yok. Derleyiciler için var ki değerlerin konumlarını
+üretim sürecinde hesaplayabilsinler.</p>
+<p>Mesela:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">ÇeviriÖrneği1</span>
+<span class="p">{</span>
+  <span class="n">değer</span> <span class="n">sayı</span> <span class="n">t64</span> <span class="o">=</span> <span class="mh">0x0_47_46_45_44_43_42_41</span><span class="p">;</span>
+  <span class="n">SayıKonumu</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="n">sayı</span><span class="p">;</span>
+  <span class="n">Harfler</span>    <span class="o">:=</span> <span class="o">&lt;*</span><span class="n">t8</span><span class="o">&gt;</span><span class="n">SayıKonumu</span><span class="p">;</span>
+  <span class="n">Tamlar</span>     <span class="o">:=</span> <span class="o">&lt;*</span><span class="n">t32</span><span class="o">&gt;</span><span class="n">SayıKonumu</span><span class="p">;</span>
+  <span class="n">Simgeler</span>   <span class="o">:=</span> <span class="o">&lt;*</span><span class="n">t16</span><span class="o">&gt;</span><span class="n">SayıKonumu</span><span class="p">;</span>
+  <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span>
+    <span class="s2">&quot;Sayı Konumu: %p</span><span class="se">\n</span><span class="s2">Harfler konumları:</span><span class="se">\n</span><span class="s2"> [0]:%p</span><span class="se">\n</span><span class="s2"> [1]:%p</span><span class="se">\n</span><span class="s2"> [2]:%p</span><span class="se">\n</span><span class="s2"> [3]:%p</span><span class="se">\n</span><span class="s2"> [4]:%p</span><span class="se">\n</span><span class="s2"> [5]:%p</span><span class="se">\n</span><span class="s2"> [6]:%p</span><span class="se">\n</span><span class="s2"> [7]:%p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">SayıKonumu</span><span class="p">,</span>
+    <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+    <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span>
+    <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Harfler</span><span class="p">[</span><span class="mi">7</span><span class="p">]);</span>
+
+  <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span>
+    <span class="s2">&quot;Sayı konumu: %p</span><span class="se">\n</span><span class="s2">Simgeler Konumları:</span><span class="se">\n</span><span class="s2">[0]:%p</span><span class="se">\n</span><span class="s2">[1]:%p</span><span class="se">\n</span><span class="s2">[2]:%p</span><span class="se">\n</span><span class="s2">[3]:%p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">SayıKonumu</span><span class="p">,</span>
+    <span class="o">&amp;</span><span class="n">Simgeler</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Simgeler</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="o">&amp;</span><span class="n">Simgeler</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Simgeler</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+
+  <span class="n">stdio</span><span class="p">::</span><span class="n">printf</span><span class="p">(</span>
+    <span class="s2">&quot;Sayı konumu: %p</span><span class="se">\n</span><span class="s2">Tamlar Konumları:</span><span class="se">\n</span><span class="s2">[0]:%p</span><span class="se">\n</span><span class="s2">[1]:%p</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">SayıKonumu</span><span class="p">,</span>
+    <span class="o">&amp;</span><span class="n">Tamlar</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">Tamlar</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="o">/*</span>
+  <span class="n">Benim</span> <span class="n">bilgisayarımda</span> <span class="n">böylesi</span> <span class="n">bir</span> <span class="n">çıktı</span> <span class="n">veriyor</span><span class="p">:</span>
+  <span class="n">Sayı</span> <span class="n">Konumu</span><span class="p">:</span> <span class="mh">0x7ffcc51683d0</span>
+  <span class="n">Harfler</span> <span class="n">konumları</span><span class="p">:</span>
+  <span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="mh">0x7ffcc51683d0</span>
+  <span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="mh">0x7ffcc51683d1</span>
+  <span class="p">[</span><span class="mi">2</span><span class="p">]:</span><span class="mh">0x7ffcc51683d2</span>
+  <span class="p">[</span><span class="mi">3</span><span class="p">]:</span><span class="mh">0x7ffcc51683d3</span>
+  <span class="p">[</span><span class="mi">4</span><span class="p">]:</span><span class="mh">0x7ffcc51683d4</span>
+  <span class="p">[</span><span class="mi">5</span><span class="p">]:</span><span class="mh">0x7ffcc51683d5</span>
+  <span class="p">[</span><span class="mi">6</span><span class="p">]:</span><span class="mh">0x7ffcc51683d6</span>
+  <span class="p">[</span><span class="mi">7</span><span class="p">]:</span><span class="mh">0x7ffcc51683d7</span>
+  <span class="n">Sayı</span> <span class="n">konumu</span><span class="p">:</span> <span class="mh">0x7ffcc51683d0</span>
+  <span class="n">Simgeler</span> <span class="n">Konumları</span><span class="p">:</span>
+  <span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="mh">0x7ffcc51683d0</span>
+  <span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="mh">0x7ffcc51683d2</span>
+  <span class="p">[</span><span class="mi">2</span><span class="p">]:</span><span class="mh">0x7ffcc51683d4</span>
+  <span class="p">[</span><span class="mi">3</span><span class="p">]:</span><span class="mh">0x7ffcc51683d6</span>
+  <span class="n">Sayı</span> <span class="n">konumu</span><span class="p">:</span> <span class="mh">0x7ffcc51683d0</span>
+  <span class="n">Tamlar</span> <span class="n">Konumları</span><span class="p">:</span>
+  <span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="mh">0x7ffcc51683d0</span>
+  <span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="mh">0x7ffcc51683d4</span>
+<span class="o">*/</span>
+</pre></div>
+</div>
+<p>İşlemin çıktısından farkedeceğiniz üzere,
+<strong>‘Harfler’</strong> dizisindeki konumlar teker teker,
+<strong>‘Simgeler’</strong> disisindeki konumlar çifter çifter,
+<strong>‘Tamlar’</strong> dizisindeki konumlar ise dörder dörder artmış.
+Derleyici üretim aşamasında genişlik ve sıralama muhasebesini
+tutuyor ki, dizi erişim ve diğer konum işlemleri canlı çalışırken
+görevlerini verilerin ardışıklığını ve sıralamasını bozmadan icra edebilsinler.</p>
+<div class="admonition note">
+<p class="admonition-title">Not</p>
+<p>Bu örnekte bayt genişliği ve sıralamanın, dizi erişiminin ibresiyle birebir hareket
+etmesi, kullanılan türlerin yapıtaşı olmasından kaynaklanıyor. Türler için
+bayt genişliği ve sıralama illa ki aynı olacak diye bir kaide yok.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="sey">
+<h2>Şey:<a class="headerlink" href="#sey" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+</section>
+<section id="sonuc">
+<h2>Sonuç:<a class="headerlink" href="#sonuc" title="Bu başlık için kalıcı bağlantı">#</a></h2>
+<p>Konumlar konusunda ne kadar çok kavram kümesiyle iletişimde bulunduğumuzu gördünüz.
+Yeni başlayanlar için göze korkutucu gelebiliyor ama ustalar için konumlara ayar çekebilme
+yeteneği büyük bir güç ve Örs bu konuda üzerinde iyi düşünülmüş araçlara sahip.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="islemler.html" title="önceki sayfa">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">önceki</p>
+            <p class="prev-next-title">İşlemler</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="turler.html" title="sonraki sayfa">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">sonraki</p>
+        <p class="prev-next-title">Türler</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By musakalayci<br/>
+  
+      &copy; Copyright 2022, musakalayci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
