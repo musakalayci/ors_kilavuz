@@ -292,11 +292,6 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../ornek.html">
-   Örnek
-  </a>
- </li>
 </ul>
 
     </div>
@@ -611,16 +606,21 @@ bayt genişliğinde yapıtaşlarıdır. Bu özelliğe atıfta bulunmak
 doğrusal veri yapısına sahip temel türe denilir.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iş</span> <span class="n">DiziÖrneği</span>
 <span class="p">{</span>
-  <span class="n">değer</span> <span class="n">tekBoyutlu</span> <span class="n">tam</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
-  <span class="n">değer</span> <span class="n">ikiBoyutlu</span> <span class="n">tam</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-     <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
-     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
-     <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]];</span>
-  <span class="n">değer</span> <span class="n">üçBoyutlu</span>  <span class="n">tam</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span>
-    <span class="p">[[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]],</span>
-     <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]]</span>
+  <span class="n">stdio</span><span class="p">::</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Dizi Örneği:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+  <span class="n">değer</span> <span class="n">tekBoyutlu</span> <span class="n">t8</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span>
+    <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">0</span><span class="p">];</span>
+  <span class="n">değer</span> <span class="n">ikiBoyutlu</span> <span class="n">t8</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span>
+    <span class="p">[[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">67</span><span class="p">,</span> <span class="mi">68</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">69</span><span class="p">,</span> <span class="mi">70</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">71</span><span class="p">,</span> <span class="mi">0</span><span class="p">]];</span>
+  <span class="n">değer</span> <span class="n">üçBoyutlu</span>  <span class="n">t8</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span>
+    <span class="p">[[[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">],</span> <span class="p">[</span><span class="mi">67</span><span class="p">,</span> <span class="mi">68</span><span class="p">]],</span>
+     <span class="p">[[</span><span class="mi">69</span><span class="p">,</span> <span class="mi">70</span><span class="p">],</span> <span class="p">[</span><span class="mi">71</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]];</span>
+  <span class="n">stdio</span><span class="p">::</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&gt; &#39;</span><span class="si">%s</span><span class="s2">&#39;</span><span class="se">\n</span><span class="s2">-&gt; &#39;</span><span class="si">%s</span><span class="s2">&#39;</span><span class="se">\n</span><span class="s2">-&gt; &#39;</span><span class="si">%s</span><span class="s2">&#39;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="o">&amp;</span><span class="n">tekBoyutlu</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="o">&amp;</span><span class="n">ikiBoyutlu</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+    <span class="o">&amp;</span><span class="n">üçBoyutlu</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -628,9 +628,10 @@ doğrusal veri yapısına sahip temel türe denilir.</p>
 <strong>‘tekBoyutlu’</strong> dizisi için <strong>(&#64;tam)*8</strong> kadar;
 <strong>‘ikiBoyutlu’</strong> dizisi için <strong>(&#64;tam)*4*2</strong> kadar;
 <strong>‘üçBoyutlu’</strong> dizisi için <strong>(&#64;tam)*2*2*2</strong> kadar bayt hafızası
-üretim sürecinde ayrılıyor ve dizinin her bir üyesinin içine belirtilen değerler yazılıyor.</p>
-<p>Tabi ki de buradaki gösterim özünde sadece bir yorumlama.
-Üç dizinin üçünün de tür bayt genişliği ve sıralaması aynı
+üretim sürecinde ayrılıyor ve dizinin her bir üyesinin içine belirtilen değerler yazılıyor.
+Arayüzdeki çıktıdan anlayabiliriz ki; hafızada yaşadıkları konum farklı olsa da konumlardaki veri aynı
+ama tür ifadeleri kullanılarak aynı veri derleyiciye farklı yorumlatılmış.
+Çünkü üç farklı konumda yaşayan dizinin üçünün de tür bayt genişliği ve sıralaması aynı
 ve hafızada 32 bayt yer kaplıyor.</p>
 <p>C söz dizisinin aksine Örs’de dizi tür ifadesinin sözdizisi farklıdır.
 C’de yukarıdaki <strong>‘üçBoyutlu’</strong> dizisini tanımlamak için <strong>‘[2][2][2]’</strong>

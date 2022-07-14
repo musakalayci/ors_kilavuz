@@ -97,27 +97,32 @@ doğrusal veri yapısına sahip temel türe denilir.
 
   iş DiziÖrneği 
   {
-    değer tekBoyutlu tam[8] = 
-      [1, 2, 3, 4, 5, 6, 7, 8];
-    değer ikiBoyutlu tam[4,2] = 
-      [[1, 2], 
-       [3, 4], 
-       [5, 6], 
-       [7, 8]];
-    değer üçBoyutlu  tam[2, 2, 2] = 
-      [[[1, 2], [3, 4]], 
-       [[5, 6], [7, 8]]]
+    stdio::print("\nDizi Örneği:\n");
+    değer tekBoyutlu t8[8] = 
+      [65, 66, 67, 68, 69, 70, 71, 0];
+    değer ikiBoyutlu t8[4,2] = 
+      [[65, 66], 
+       [67, 68], 
+       [69, 70], 
+       [71, 0]];
+    değer üçBoyutlu  t8[2, 2, 2] = 
+      [[[65, 66], [67, 68]], 
+       [[69, 70], [71, 0]]];
+    stdio::print("-> '%s'\n-> '%s'\n-> '%s'\n",
+      &tekBoyutlu[0],
+      &ikiBoyutlu[0,0],
+      &üçBoyutlu[0,0,0]);
   }
 
 Örnekte yapılan şey gayet basit, 
 **'tekBoyutlu'** dizisi için **(@tam)\*8** kadar;
 **'ikiBoyutlu'** dizisi için **(@tam)\*4\*2** kadar;
 **'üçBoyutlu'** dizisi için **(@tam)\*2\*2\*2** kadar bayt hafızası
-üretim sürecinde ayrılıyor ve dizinin her bir üyesinin içine belirtilen değerler yazılıyor. 
-
-Tabi ki de buradaki gösterim özünde sadece bir yorumlama. 
-Üç dizinin üçünün de tür bayt genişliği ve sıralaması aynı 
-ve hafızada 32 bayt yer kaplıyor.
+üretim sürecinde ayrılıyor ve dizinin her bir üyesinin içine belirtilen değerler yazılıyor.
+Arayüzdeki çıktıdan anlayabiliriz ki; hafızada yaşadıkları konum farklı olsa da konumlardaki veri aynı 
+ama tür ifadeleri kullanılarak aynı veri derleyiciye farklı yorumlatılmış.  
+Çünkü üç farklı konumda yaşayan dizinin üçünün de tür bayt genişliği ve sıralaması aynı 
+ve hafızada 32 bayt yer kaplıyor. 
 
 C söz dizisinin aksine Örs'de dizi tür ifadesinin sözdizisi farklıdır. 
 C'de yukarıdaki **'üçBoyutlu'** dizisini tanımlamak için **'[2][2][2]'** 
@@ -455,6 +460,7 @@ Mesela:
 Derleyici üretim aşamasında genişlik ve sıralama muhasebesini 
 tutuyor ki, dizi erişim ve diğer konum işlemleri canlı çalışırken 
 görevlerini verilerin ardışıklığını ve sıralamasını bozmadan icra edebilsinler. 
+
 
 .. note:: 
   Bu örnekte bayt genişliği ve sıralamanın, dizi erişiminin ibresiyle birebir hareket 

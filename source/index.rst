@@ -7,7 +7,6 @@
    :caption: İçerik:
    
    giris 
-   ornek
 
 
 
