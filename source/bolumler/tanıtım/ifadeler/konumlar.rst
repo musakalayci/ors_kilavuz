@@ -83,51 +83,7 @@ bayt genişliğinde yapıtaşlarıdır. Bu özelliğe atıfta bulunmak
   }
 
 Tabi ki de böyle bir örneği gerçek hayatta pek kullanmazsınız. 
-İşte tam burada bir kavramı sizinle tanıştırmam gerekiyor. 
-
----------------
-
-Diziler: 
-^^^^^^^^
-
-Hafızada sıralı ve ardışık yer alan üyelerinin bir önemi olmaksızın
-doğrusal veri yapısına sahip temel türe denilir. 
-
-.. code::
-
-  iş DiziÖrneği 
-  {
-    stdio::print("\nDizi Örneği:\n");
-    değer tekBoyutlu t8[8] = 
-      [65, 66, 67, 68, 69, 70, 71, 0];
-    değer ikiBoyutlu t8[4,2] = 
-      [[65, 66], 
-       [67, 68], 
-       [69, 70], 
-       [71, 0]];
-    değer üçBoyutlu  t8[2, 2, 2] = 
-      [[[65, 66], [67, 68]], 
-       [[69, 70], [71, 0]]];
-    stdio::print("-> '%s'\n-> '%s'\n-> '%s'\n",
-      &tekBoyutlu[0],
-      &ikiBoyutlu[0,0],
-      &üçBoyutlu[0,0,0]);
-  }
-
-Örnekte yapılan şey gayet basit, 
-**'tekBoyutlu'** dizisi için **(@tam)\*8** kadar;
-**'ikiBoyutlu'** dizisi için **(@tam)\*4\*2** kadar;
-**'üçBoyutlu'** dizisi için **(@tam)\*2\*2\*2** kadar bayt hafızası
-üretim sürecinde ayrılıyor ve dizinin her bir üyesinin içine belirtilen değerler yazılıyor.
-Arayüzdeki çıktıdan anlayabiliriz ki; hafızada yaşadıkları konum farklı olsa da konumlardaki veri aynı 
-ama tür ifadeleri kullanılarak aynı veri derleyiciye farklı yorumlatılmış.  
-Çünkü üç farklı konumda yaşayan dizinin üçünün de tür bayt genişliği ve sıralaması aynı 
-ve hafızada 32 bayt yer kaplıyor. 
-
-C söz dizisinin aksine Örs'de dizi tür ifadesinin sözdizisi farklıdır. 
-C'de yukarıdaki **'üçBoyutlu'** dizisini tanımlamak için **'[2][2][2]'** 
-sözdizisini kullanırken; Örs için **'[2, 2, 2]'** sözdizisini kullanıyoruz. 
-Nedeni ise yazarken virgül koymanın ele daha yatkın olması. 
+İşte tam burada bir kavramı sizinle tanıştırmam gerekiyor: Dereceler.
 
 ---------------
 
@@ -196,7 +152,69 @@ Evet ve yukarıdaki örnek tam olarak bunu yapıyor.
   Çoğul dereceli değerlerle o konumları her hangi bir değer ile saklayabiliyoruz. 
 
 Fark edeceğiniz üzere konumlar ve diziler birbirleri ile bir şekilde ilişkili ama 
-sanki ilişkiyi kuracak kavramı bilmiyoruz. 
+sanki ilişkiyi kuracak kavramı bilmiyoruz ki konum kavramının ve dizilerin birbirlerine karıştırılmasında 
+yatan ana nedenlerden birisi. Konumlar bir kavram. Konumlarla ilgili gerçek olan tek veri 
+özlerinde doğal sayı değerleri olması ama diziler ise yazılımda en az d64 yapıtaşı kadar gerçek 
+bir veri türü. 
+
+Diziler: 
+^^^^^^^^
+
+Hafızada sıralı ve ardışık yer alan üyelerinin bir önemi olmaksızın
+doğrusal veri yapısına sahip temel türe denilir. 
+
+.. code::
+
+  iş DiziÖrneği 
+  {
+    stdio::print("\nDizi Örneği:\n");
+    değer tekBoyutlu t8[8] = 
+      [65, 66, 67, 68, 69, 70, 71, 0];
+    değer ikiBoyutlu t8[4,2] = 
+      [[65, 66], 
+       [67, 68], 
+       [69, 70], 
+       [71, 0]];
+    değer üçBoyutlu  t8[2, 2, 2] = 
+      [[[65, 66], [67, 68]], 
+       [[69, 70], [71, 0]]];
+    stdio::print("-> '%s'\n-> '%s'\n-> '%s'\n",
+      &tekBoyutlu[0],
+      &ikiBoyutlu[0,0],
+      &üçBoyutlu[0,0,0]);
+  }
+
+Örnekte yapılan şey gayet basit, 
+**'tekBoyutlu'** dizisi için **(@tam)\*8** kadar;
+**'ikiBoyutlu'** dizisi için **(@tam)\*4\*2** kadar;
+**'üçBoyutlu'** dizisi için **(@tam)\*2\*2\*2** kadar bayt hafızası
+üretim sürecinde ayrılıyor ve dizinin her bir üyesinin içine belirtilen değerler yazılıyor.
+Arayüzdeki çıktıdan anlayabiliriz ki; hafızada yaşadıkları konum farklı olsa da konumlardaki veri aynı 
+ama tür ifadeleri kullanılarak aynı veri derleyiciye farklı yorumlatılmış.  
+Çünkü üç farklı konumda yaşayan dizinin üçünün de tür bayt genişliği ve sıralaması aynı 
+ve hafızada 32 bayt yer kaplıyor. 
+
+C söz dizisinin aksine Örs'de dizi tür ifadesinin sözdizisi farklıdır. 
+C'de yukarıdaki **'üçBoyutlu'** dizisini tanımlamak için **'[2][2][2]'** 
+sözdizisini kullanırken; Örs için **'[2, 2, 2]'** sözdizisini kullanıyoruz. 
+Nedeni ise yazarken virgül koymanın ele daha yatkın olması. 
+
+Peki yukarıdaki **'tekBoyutlu'** dizisinin derecesi kaç ? İki mi ? Külliyen hayır. 
+Orada tek dereceli değer var. 
+Bu değerin içinde sıralı birden fazla değerin olması derecesini arttırmıyor ve 
+konumlar kavramı ile dizi türünün biz tasarımcıların kafasını karıştırıyor. 
+Çünkü işletim sisteminden hafıza alanı istediğimizde onu dizi gibi yorumlayabiliyoruz ve 
+onu en az iki dereceli değerle saklayabiliyoruz. Diğer taraftan diziler ise tek dereceli. Bu nasıl olur ?
+
+Şöyle ki: Varsayalım ki işletim sisteminden doğrusal hafıza alanı istediniz. İşletim sistemi size 
+tek dereceli değeri verdi ve onu yine tek dereceli konuma sakladınız; etti iki dereceli konum değeri. 
+Tanımladığınız dizinin ise yaşadığı hafıza alanının yine bir önceki gibi doğrusal olduğunu varsayalım. 
+Zaten doğrusal bir hafıza alanında tek dereceli olarak tanımlı ve bir değerde saklı; etti bir dereceli dizi değeri. 
+
+Anlamsız geliyor olabilir. Bu ayrım o kadar temel ki beyinde oturması yıllar alıyor. 
+Bu manada sizlerle bir diğer hayati kavramı daha tanıştırmalıyım: 
+
+---------------
 
 Boyutlar:
 ^^^^^^^^^
@@ -287,7 +305,7 @@ belirmeye başlıyor.
   gelen bölgedeki verilerin konumları ardışık değil. Linux ve Freebsd'de kesinlikle öyle değil ama diyelim ki 
   öyle biz nasıl dereceler kavramını kullanarak ileri, geri konum aritmetiği yapacaktık ? 
   Basitçe söyleyeyim yapamayacaktık. Eğer veri ardışık değilse zaten konum aritmetiği yapmanın 
-  ne anlamı var ve güvenilirliği. Fakat boyutlar ile dereceler ve konumlar ile diziler arasındaki 
+  ne anlamı ve güvenilirliği var. Fakat boyutlar ile dereceler ve konumlar ile diziler arasındaki 
   kavram ilişkisi devam edecekti. Yine konumlara derecelendirerek erişecektik ve yine dizilere 
   boyutlandırarak erişecektik. Sadece dereceli erişim yavaş olacaktı ki konum erişimi destekleyen 
   canlı dillerde (C#, OCaml vs) konum erişimi yavaş olacaktı. 
@@ -316,7 +334,7 @@ belirmeye başlıyor.
   veri türünüz algoritmayı belirliyor. 2 boyutlu doğası olan bir tür için zorlasanız zorlasanız 
   O(nlog(n)) senaryosunda algoritma geliştirebilirsiniz ki bu şu anlama geliyor elinizdeki veriye göre 
   algoritma O(n^2) gibi de çalışabilir. Özet olarak kullandığınız tür algoritmanızı belirliyor. 
-  
+
 Derleyicide gerçekleşen şey ise çok basit, derecelendirme işlemi konum aritmetiği yapmadan 
 dereceyi düşürüp tutulu konumdaki veriyi getiriyor; dizi gibi yorumladığı konumlar için ise  
 konum aritmetiği yapıp derecesini düşürerek veriyi dönüyor. 
@@ -472,6 +490,13 @@ görevlerini verilerin ardışıklığını ve sıralamasını bozmadan icra ede
 Şey:
 ^^^^
 
+**'şey'** yapıtaşı; **'mimari'** genişliğinde olan ve içinde herhangi dereceden herhangi 
+konumu tutan veya tutmayan yapıtaşıdır. 
+
+Tıpkı nasıl ardışık türlerin ayağını yere bastırmak için dizi türünü tanımladıysak, 
+konum kavramının da ayağını bir yapıtaşı ile yere değdirmemiz gerekiyor. 
+
+C dilindeki dengi **'void*'** türüdür ama Örs dilinde 
 
 Sonuç:
 ^^^^^^
