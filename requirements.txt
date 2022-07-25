@@ -1,5 +1,6 @@
 
 sphinx_book_theme
+sphinx-docxbuilder
 
 attrs==21.2.0
     # via markdown-it-py
@@ -20,7 +21,7 @@ docutils==0.16
     #   sphinx
     #   sphinx-rtd-theme
     #   sphinxcontrib-opendataservices
-    #   sphinxcontrib-opendataservices-jsonschema
+    #   sphinxcontrib-opendataservifces-jsonschema
 matplotlib
 ipython
 numpydoc

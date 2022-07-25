@@ -8,6 +8,10 @@
    
    /bolumler/giris 
    /bolumler/hızlı_tanıtım  
+   /bolumler/acemi_ocagı
+   /bolumler/algoritmalar
+   /bolumler/unix_ortami
+   /bolumler/tasarım.rst 
 
 .. warning::
    Daha hala hazırlık aşamasındayız. Bu illaki kötü bir şey olacak 

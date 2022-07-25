@@ -1,5 +1,6 @@
+*****
 Giriş
-=====
+*****
 
 .. toctree::
    :maxdepth: 2
@@ -8,7 +9,7 @@ Giriş
    giris/onsoz
    giris/tanıtım  
    giris/kurulum  
-   giris/derleme
+   giris/derleme 
 
 .. warning::
    Daha hala hazırlık aşamasındayız. Bu illaki kötü bir şey olacak 

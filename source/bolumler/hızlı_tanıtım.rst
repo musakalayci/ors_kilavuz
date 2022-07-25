@@ -4,7 +4,6 @@ Tanıtım
 
 .. toctree::
    :maxdepth: 2
-   :caption: İçerik: 
 
    tanıtım/lügat
    tanıtım/yorumlar 
