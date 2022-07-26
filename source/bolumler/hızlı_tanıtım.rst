@@ -7,9 +7,9 @@ Tanıtım
 
    tanıtım/lügat
    tanıtım/yorumlar 
-   tanıtım/degerler 
+   tanıtım/degerler
+   tanıtım/ifadeler  
    tanıtım/satırlar
-   tanıtım/ifadeler 
    tanıtım/hafıza 
    tanıtım/islemler 
    tanıtım/turler 
